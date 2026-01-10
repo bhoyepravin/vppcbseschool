@@ -1,0 +1,34 @@
+import { smartclassroom, achivement, leaders, academic } from "../../assets";
+
+export const achievementsData = {
+  title: "Our Achievements",
+  subtitle:
+    "Celebrating academic excellence, discipline, and holistic development",
+
+  items: [
+    {
+      id: 1,
+      image: academic,
+      description:
+        "Vidya Prabodhini Prashala CBSE School has been recognised for its consistent academic excellence and commitment to value-based education.",
+    },
+    {
+      id: 2,
+      image: achivement,
+      description:
+        "Our students have achieved outstanding results in CBSE examinations, along with remarkable performances in co-curricular and extracurricular activities.",
+    },
+    {
+      id: 3,
+      image: smartclassroom,
+      description:
+        "VPP CBSE School is acknowledged for innovative teaching methodologies, smart classrooms, and a student-centric learning environment.",
+    },
+    {
+      id: 4,
+      image: leaders,
+      description:
+        "We proudly foster leadership, discipline, patriotism, and strong character inspired by the values of the CHME educational legacy.",
+    },
+  ],
+};
