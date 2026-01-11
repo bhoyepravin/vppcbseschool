@@ -1,11 +1,7 @@
 export const secondarySectionData = {
   title: "Secondary Section (14 – 15 Years)",
   passage: [
-    "The Secondary Section marks a transformative stage in a student’s educational journey, where learners evolve into confident, responsible, and independent individuals.",
-    "At this level, we nurture academic excellence and a competitive spirit, motivating students to reach their fullest potential through dedicated effort and consistent academic performance.",
-    "Our curriculum emphasizes critical thinking, innovation, and technology-integrated learning, preparing students for board examinations and real-world challenges.",
-    "To ensure every learner succeeds, we provide remedial support for advanced learners and additional academic assistance to strengthen conceptual understanding.",
-    "We instil values of discipline, integrity, and leadership, fostering holistic growth that balances intellect with strong character and purpose.",
+    "The Secondary Section marks a transformative stage in a student’s educational journey, where learners evolve into confident, responsible, and independent individuals.At this level, we nurture academic excellence and a competitive spirit, motivating students to reach their fullest potential through dedicated effort and consistent academic performance.Our curriculum emphasizes critical thinking, innovation, and technology-integrated learning, preparing students for board examinations and real-world challenges.To ensure every learner succeeds, we provide remedial support for advanced learners and additional academic assistance to strengthen conceptual understanding.We instil values of discipline, integrity, and leadership, fostering holistic growth that balances intellect with strong character and purpose.",
   ],
   cards: [
     {

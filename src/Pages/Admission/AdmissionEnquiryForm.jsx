@@ -353,10 +353,10 @@ const AdmissionEnquiryForm = () => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
             Admission Enquiry Form
           </h1>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#F07B3D] to-[#FF9933] mx-auto rounded-full mb-6"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#800000] to-[#800000] mx-auto rounded-full mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Begin your child's educational journey with us. Fill out the form
             below and our admission team will get in touch with you shortly.
@@ -469,7 +469,7 @@ const AdmissionEnquiryForm = () => {
                   className={`w-full py-4 px-6 rounded-lg font-semibold text-white transition-all duration-300 flex items-center justify-center gap-3 ${
                     isSubmitting
                       ? "bg-gray-400 cursor-not-allowed"
-                      : "bg-gradient-to-r from-[#F07B3D] to-[#FF9933] hover:from-[#FF9933] hover:to-[#F07B3D] hover:shadow-lg transform hover:-translate-y-0.5"
+                      : "bg-gradient-to-r from-[#0A2342] to-[#0A2342] hover:from-[#0A2342] hover:to-[#0A2342] hover:shadow-lg transform hover:-translate-y-0.5"
                   }`}
                 >
                   {isSubmitting ? (

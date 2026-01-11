@@ -17,18 +17,30 @@ const LeadershipMessages = () => {
               <img
                 src={item.photo}
                 alt={item.title}
-                className="w-72 h-120 object-contain rounded-2xl"
+                className="w-[200px]
+        sm:w-full
+        h-auto
+        rounded-xl
+        object-contain
+        shadow-md
+        mx-auto"
               />
             </div>
 
             {/* Message Content */}
             <div className="w-full md:w-2/3 bg-white p-6 rounded-xl shadow-sm">
-              <h2 className="text-2xl font-serif text-gray-600 mb-2">
+              <h2 className="text-2xl font-serif text-[#800000] mb-2">
                 {item.title}
               </h2>
               <h4 className="text-gray-700 font-medium mb-4">{item.name}</h4>
-              <p className="text-gray-600 leading-relaxed text-justify">
-                {item.message}
+              <p className="text-gray-700
+      text-sm sm:text-base lg:text-lg
+      leading-relaxed
+      space-y-4
+      text-justify">
+                {item.message}    
+
+                
               </p>
             </div>
           </div>

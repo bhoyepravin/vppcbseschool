@@ -15,10 +15,10 @@ const AdmissionGuidelines = () => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-500 mb-4">
+          <h1 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
             {admissionGuidelinesData.title}
           </h1>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#F07B3D] to-[#FF9933] mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#800000] to-[#800000] mx-auto rounded-full"></div>
           <p className="text-gray-600 mt-6">Admission Guidelines & Process</p>
         </div>
 
@@ -30,10 +30,10 @@ const AdmissionGuidelines = () => {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 bg-[#F07B3D] rounded-lg text-white">
+                {/* <div className="p-2 bg-[#F07B3D] rounded-lg text-white">
                   {iconMap[section.id]}
-                </div>
-                <h2 className="text-xl font-bold text-gray-800">
+                </div> */}
+                <h2 className="text-xl font-bold text-[#800000]">
                   {section.title}
                 </h2>
               </div>
@@ -63,7 +63,7 @@ const AdmissionGuidelines = () => {
         {/* External Link Section */}
 
         {/* Contact Information */}
-        <div className="mt-8 bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        {/* <div className="mt-8 bg-white rounded-lg shadow-sm border border-gray-200 p-6">
           <h3 className="text-lg font-bold text-gray-800 mb-4">
             For More Information
           </h3>
@@ -89,10 +89,10 @@ const AdmissionGuidelines = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Important Note */}
-        <div className="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+        {/* <div className="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
           <div className="flex items-start gap-3">
             <div className="flex-shrink-0">
               <div className="w-6 h-6 rounded-full bg-yellow-100 flex items-center justify-center">
@@ -108,7 +108,7 @@ const AdmissionGuidelines = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

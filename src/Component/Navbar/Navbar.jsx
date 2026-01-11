@@ -29,15 +29,15 @@ const Navbar = () => {
         { label: "About Us", path: "/about/about" },
         { label: "Infrastructure", path: "/about/infrastructure" },
         { label: "Faculty", path: "/about/faculty" },
-        {
-          label: "Academics",
-          path: "",
-          dropdown: [
-            { label: "Pre-Primary", path: "/academics/pre-primary" },
-            { label: "Primary", path: "/academics/primary" },
-            { label: "Secondary", path: "/academics/secondary" },
-          ],
-        },
+        // {
+        //   label: "Academics",
+        //   path: "",
+        //   dropdown: [
+        //     { label: "Pre-Primary", path: "/academics/pre-primary" },
+        //     { label: "Primary", path: "/academics/primary" },
+        //     { label: "Secondary", path: "/academics/secondary" },
+        //   ],
+        // },
         { label: "Management Committee", path: "/about/management-committee" },
         { label: "Teachers", path: "/about/teachers" },
       ],
@@ -48,7 +48,7 @@ const Navbar = () => {
       dropdown: [
         { label: "Admission Guidelines", path: "/admissions/guidelines" },
         { label: "Admission Procedure", path: "/admissions/procedure" },
-        { label: "Fee Structure", path: "/admissions/fee-structure" },
+        
         { label: "Online Enquiry Form", path: "/admissions/enquiry" },
         { label: "Admission Form", path: "/admissions/admission" },
       ],
@@ -68,8 +68,8 @@ const Navbar = () => {
       label: "Info Corner",
       path: "/info-corner",
       dropdown: [
-        { label: "Reports", path: "/info-corner/reports" },
-        { label: "Book List", path: "/info-corner/book-list" },
+        // { label: "Reports", path: "/info-corner/reports" },
+        // { label: "Book List", path: "/info-corner/book-list" },
         { label: "CBSE Affiliation", path: "/info-corner/cbse-affiliation" },
         {
           label: "Extension of Affiliation Certificate",
@@ -86,7 +86,7 @@ const Navbar = () => {
       dropdown: [
         { label: "Academic Calendar", path: "calendar/academic-calendar" },
         { label: "Class Wise Strength", path: "calendar/class-wise-strength" },
-        { label: "Time-Table", path: "calendar/table-table" },
+        // { label: "Time-Table", path: "calendar/table-table" },
       ],
     },
     {
@@ -110,7 +110,7 @@ const Navbar = () => {
       ],
     },
     { label: "Co-Curricular", path: "/co-curricular" },
-    { label: "Blogs", path: "/blog" },
+    // { label: "Blogs", path: "/blog" },
     { label: "Contact Us", path: "/contact-us" },
     { label: "Social Connect", path: "/social-connect" },
   ];
@@ -155,7 +155,7 @@ const Navbar = () => {
   return (
     <>
       {/* ================= HEADER ================= */}
-      <div className="bg-gradient-to-r from-[#ffffff] via-[#c0a2ee] to-[#4502a3] sticky top-0 z-50 shadow-xl border-b border-[#3a2a5a]">
+      <div className="bg-gradient-to-r from-[#ffffff] via-[#ffffff] to-[#ffffff] sticky top-0 z-50 shadow-xl border-b border-[#3a2a5a]">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-4 no-underline group">
             <img src={logo} alt="Logo" className="h-18 md:h-25 w-auto" />
@@ -182,8 +182,8 @@ const Navbar = () => {
                 onClick={handleDownloadBrochure}
                 aria-label="Download Brochure"
               >
-                <Download size={18} className="text-[#c4b5fd]" />
-                <span className="font-semibold text-sm tracking-wide">
+                <Download size={18} className="text-[#800000]" />
+                <span className="font-semibold text-[#800000] text-sm tracking-wide">
                   Download Brochure
                 </span>
               </button>
@@ -191,13 +191,13 @@ const Navbar = () => {
             <div className="flex flex-col gap-2">
               <button
                 onClick={() => navigate("/admissions/enquiry")}
-                className=" w-full bg-gradient-to-r from-[#2a2342] to-[#2a2342] hover:from-[#2a2342] hover:to-[#2a2342] text-white text-xs px-4 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 font-semibold tracking-wide"
+                className=" w-full bg-gradient-to-r from-[#0A2342] to-[#0A2342] hover:from-[#0A2342] hover:to-[#0A2342] text-white text-xs px-4 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 font-semibold tracking-wide"
               >
                 INQUIRY FORM
               </button>
 
               <Link to="/disclosure" className="no-underline">
-                <button className="bg-gradient-to-r from-[#2a2342] to-[#2a2342] hover:from-[#2a2342] hover:to-[#2a2342] text-white text-xs px-4 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full font-semibold tracking-wide">
+                <button className="bg-gradient-to-r from-[#0A2342] to-[#0A2342] hover:from-[#0A2342] hover:to-[#0A2342] text-white text-xs px-4 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full font-semibold tracking-wide">
                   MANDATORY PUBLIC DISCLOSURE
                 </button>
               </Link>

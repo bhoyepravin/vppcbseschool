@@ -60,8 +60,9 @@ import aboutus_1 from "../assets/aboutus/aboutus_1.jpeg";
 import cmadipakjoshichairman from "../assets/aboutus/cma_dipakjoshi_chairman.jpeg";
 import principalsir from "../assets/aboutus/principal_vpp.jpeg";
 import ourfaculty from "../assets/aboutus/ourfaculty.jpg";
+import drmoonje from "../assets/aboutus/Dr_b_s_moonje.jpg";
 
-export { aboutus_1, cmadipakjoshichairman, principalsir, ourfaculty };
+export { aboutus_1, cmadipakjoshichairman, principalsir, ourfaculty, drmoonje };
 
 // Infrastructure Section
 import infrastructure_1 from "../assets/aboutus/infrastructure/kginfrastructure_01.jpg";
@@ -143,6 +144,9 @@ export {
   kgopenhouse6,
   kgopenhouse7,
 };
+
+import classwisestrength from "../assets/calendar/strength_2025-26.jpg"
+export{classwisestrength}
 
 import buildingsafty from "../assets/disclosures/Building_Safty.pdf";
 import affiliationcert from "../assets/disclosures/Extention_of_affiliation_certificate.pdf";

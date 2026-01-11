@@ -83,24 +83,173 @@ const Inquiry = () => {
   };
 
   const popularLocations = [
-    "Delhi",
-    "Mumbai",
-    "Bangalore",
-    "Hyderabad",
-    "Chennai",
-    "Kolkata",
-    "Pune",
-    "Ahmedabad",
-    "Jaipur",
-    "Lucknow",
-    "Chandigarh",
-    "Dehradun",
-    "Noida",
-    "Gurgaon",
-    "Faridabad",
-    "Ghaziabad",
-    "Greater Noida",
-  ];
+  // Metro Cities
+  "Delhi",
+  "Mumbai",
+  "Bangalore",
+  "Hyderabad",
+  "Chennai",
+  "Kolkata",
+  "Pune",
+  "Ahmedabad",
+
+  // Maharashtra
+  "Nagpur",
+  "Nashik",
+  "Aurangabad",
+  "Solapur",
+  "Kolhapur",
+  "Amravati",
+
+  // Gujarat
+  "Surat",
+  "Vadodara",
+  "Rajkot",
+  "Bhavnagar",
+  "Jamnagar",
+
+  // Karnataka
+  "Mysore",
+  "Mangalore",
+  "Hubli",
+  "Belgaum",
+  "Davangere",
+
+  // Telangana
+  "Warangal",
+  "Karimnagar",
+  "Nizamabad",
+
+  // Tamil Nadu
+  "Coimbatore",
+  "Madurai",
+  "Trichy",
+  "Salem",
+  "Erode",
+  "Tirunelveli",
+
+  // West Bengal
+  "Howrah",
+  "Durgapur",
+  "Siliguri",
+  "Asansol",
+
+  // Rajasthan
+  "Jaipur",
+  "Jodhpur",
+  "Udaipur",
+  "Kota",
+  "Ajmer",
+  "Bikaner",
+
+  // Uttar Pradesh
+  "Lucknow",
+  "Kanpur",
+  "Agra",
+  "Varanasi",
+  "Prayagraj",
+  "Meerut",
+  "Noida",
+  "Greater Noida",
+  "Ghaziabad",
+
+  // Haryana
+  "Gurgaon",
+  "Faridabad",
+  "Panipat",
+  "Sonipat",
+  "Karnal",
+
+  // Punjab
+  "Chandigarh",
+  "Ludhiana",
+  "Amritsar",
+  "Jalandhar",
+  "Patiala",
+
+  // Uttarakhand
+  "Dehradun",
+  "Haridwar",
+  "Roorkee",
+  "Haldwani",
+
+  // Madhya Pradesh
+  "Bhopal",
+  "Indore",
+  "Gwalior",
+  "Jabalpur",
+  "Ujjain",
+
+  // Bihar
+  "Patna",
+  "Gaya",
+  "Bhagalpur",
+  "Muzaffarpur",
+
+  // Jharkhand
+  "Ranchi",
+  "Jamshedpur",
+  "Dhanbad",
+
+  // Odisha
+  "Bhubaneswar",
+  "Cuttack",
+  "Rourkela",
+  "Sambalpur",
+
+  // Chhattisgarh
+  "Raipur",
+  "Bilaspur",
+  "Durg",
+  "Bhilai",
+
+  // Assam
+  "Guwahati",
+  "Dibrugarh",
+  "Silchar",
+
+  // Kerala
+  "Kochi",
+  "Trivandrum",
+  "Kozhikode",
+  "Thrissur",
+
+  // Andhra Pradesh
+  "Visakhapatnam",
+  "Vijayawada",
+  "Guntur",
+  "Nellore",
+  "Tirupati",
+
+  // Goa
+  "Panaji",
+  "Margao",
+
+  // Himachal Pradesh
+  "Shimla",
+  "Solan",
+  "Dharamshala",
+
+  // Jammu & Kashmir
+  "Srinagar",
+  "Jammu",
+
+  // North East
+  "Imphal",
+  "Shillong",
+  "Aizawl",
+  "Agartala",
+  "Kohima",
+  "Itanagar",
+
+  // UTs
+  "Puducherry",
+  "Port Blair",
+  "Daman",
+  "Diu",
+  "Silvassa",
+];
+
 
   return (
     <section className="py-24 relative overflow-hidden" id="inquiry-form">
@@ -330,7 +479,7 @@ const Inquiry = () => {
                                 "nursery",
                                 "lkg",
                                 "ukg",
-                                ...Array.from({ length: 12 }, (_, i) => i + 1),
+                                ...Array.from({ length: 10 }, (_, i) => i + 1),
                               ].map((grade) => (
                                 <option key={grade} value={grade}>
                                   {typeof grade === "number"

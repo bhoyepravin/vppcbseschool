@@ -8,7 +8,7 @@ const VisionMission = () => {
     <section className="bg-gray-50 py-14">
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Title */}
-        <h2 className="text-center text-3xl md:text-4xl font-serif font-semibold text-gray-600 mb-10">
+        <h2 className="text-center text-2xl md:text-4xl font-serif font-semibold text-[#800000] mb-10">
           {title}
         </h2>
 
@@ -18,10 +18,10 @@ const VisionMission = () => {
           <div className="space-y-8">
             {leftColumn.map((item, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                <h3 className="text-xl font-semibold text-[#800000] mb-3">
                   {item.heading}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -30,10 +30,10 @@ const VisionMission = () => {
 
           {/* Right Column – Our Purpose */}
           <div className="bg-white p-8 rounded-xl shadow-sm flex flex-col justify-center">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            <h3 className="text-xl font-semibold text-[#800000] mb-3">
               {rightColumn.heading}
             </h3>
-            <p className="text-gray-600 leading-relaxed text-lg">
+            <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed text-lg">
               {rightColumn.description}
             </p>
           </div>

@@ -1357,7 +1357,7 @@ const AdmissionForm = () => {
 
       {/* School Header */}
       <div className="text-center mb-8 border-b-2 border-blue-200 pb-6">
-        <h1 className="text-3xl font-extrabold text-[#0A2343]">
+        <h1 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
           VIDYA PRABODHINI PRASHALA
         </h1>
         <p className="text-gray-600 mt-2">(Affiliated with CBSE, New Delhi)</p>

@@ -6,29 +6,35 @@ const ContactUs = () => {
     <section className="bg-gray-100 py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* TITLE */}
-        <h2 className="text-center text-3xl md:text-5xl font-bold text-gray-500 mb-6">
+        <h2 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text-mb-4">
           {contactUsData.title}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-14">
           {/* CONTACT DETAILS */}
           <div className="space-y-6">
-            {contactUsData.details.map((item) => (
-              <div
-                key={item.id}
-                className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 hover:shadow-lg transition"
-              >
-                <div className="text-3xl">{item.icon}</div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-700">
-                    {item.label}
-                  </h3>
-                  <p className="text-gray-600 text-sm md:text-base">
-                    {item.value}
-                  </p>
-                </div>
-              </div>
-            ))}
+           {contactUsData.details.map((item) => (
+  <div
+    key={item.id}
+    className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 hover:shadow-lg transition"
+  >
+    <div>
+      <h3 className="text-lg font-semibold text-gray-700">
+        {item.label}
+      </h3>
+
+      <a
+        href={item.link}
+        target={item.label === "Address" ? "_blank" : undefined}
+        rel="noopener noreferrer"
+        className="text-gray-600 text-sm md:text-base hover:text-[#800000] transition"
+      >
+        {item.value}
+      </a>
+    </div>
+  </div>
+))}
+
           </div>
 
           {/* GOOGLE MAP */}

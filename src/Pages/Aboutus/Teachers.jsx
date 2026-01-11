@@ -18,13 +18,13 @@ const Teachers = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
-          <h1 className="text-2xl md:text-4xl font-bold text-gray-500 mb-4">
+          <h1 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
             {teachersData.hero.title}
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#F07B3D] to-[#FF9933] mx-auto mb-6 rounded-full"></div>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <div className="w-24 h-1 bg-gradient-to-r from-[#800000] to-[#800000] mx-auto mb-6 rounded-full"></div>
+          {/* <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             {teachersData.hero.description}
-          </p>
+          </p> */}
         </div>
 
         {/* Stats Section */}
@@ -44,22 +44,27 @@ const Teachers = () => {
         </div> */}
 
         {/* About Faculty Section */}
-        <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-12">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 bg-[#F07B3D] rounded-lg">
-              <Book className="h-6 w-6 text-white" />
-            </div>
-            <h2 className="text-xl md:text-2xl font-bold text-gray-500">
-              {teachersData.about.title}
-            </h2>
-          </div>
+        <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8 mb-8 sm:mb-10">
+  {/* Heading */}
+  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+    {/* Optional Icon */}
+    {/* <div className="p-2 bg-[#800000] rounded-lg">
+      <Book className="h-6 w-6 text-white" />
+    </div> */}
+    
+    <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#800000]">
+      {teachersData.about.title}
+    </h2>
+  </div>
 
-          <div className=" rounded-lg p-6 border-gray-200">
-            <p className="text-gray-700 leading-relaxed text-justify">
-              {teachersData.about.content}
-            </p>
-          </div>
-        </div>
+  {/* Content */}
+  <div className="rounded-lg p-4 sm:p-6">
+    <p className="text-gray-700 leading-relaxed text-justify text-sm sm:text-base md:text-lg">
+      {teachersData.about.content}
+    </p>
+  </div>
+</div>
+
 
         {/* Departments Sections */}
         <div className="space-y-12">
@@ -71,7 +76,7 @@ const Teachers = () => {
               {/* Department Header */}
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-8">
                 <div>
-                  <h2 className="text-xl md:text-2xl font-bold text-gray-500 mb-2">
+                  <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#800000]">
                     {department.title}
                   </h2>
                   <p className="text-gray-600">{department.description}</p>
@@ -104,12 +109,12 @@ const Teachers = () => {
                           Qualification & Experience
                         </div>
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                      {/* <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
                         <div className="flex items-center gap-2">
                           <Mail className="h-4 w-4" />
                           Email
                         </div>
-                      </th>
+                      </th> */}
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
@@ -122,13 +127,7 @@ const Teachers = () => {
                       >
                         <td className="px-6 py-4 whitespace-nowrap">
                           <div className="flex items-center gap-3">
-                            <div className="h-10 w-10 rounded-full overflow-hidden flex-shrink-0">
-                              <img
-                                src={teacher.image}
-                                alt={teacher.name}
-                                className="h-full w-full object-cover"
-                              />
-                            </div>
+                            
                             <div className="text-sm font-medium text-gray-900">
                               {teacher.name}
                             </div>
@@ -154,14 +153,14 @@ const Teachers = () => {
                             </div>
                           </div>
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
+                        {/* <td className="px-6 py-4 whitespace-nowrap">
                           <a
                             href={`mailto:${teacher.email}`}
                             className="text-sm text-blue-600 hover:text-blue-800 hover:underline"
                           >
                             {teacher.email}
                           </a>
-                        </td>
+                        </td> */}
                       </tr>
                     ))}
                   </tbody>
@@ -169,7 +168,7 @@ const Teachers = () => {
               </div>
 
               {/* Mobile View - Cards */}
-              <div className="mt-8 md:hidden space-y-4">
+              {/* <div className="mt-8 md:hidden space-y-4">
                 {department.teachers.map((teacher) => (
                   <div
                     key={teacher.id}
@@ -226,7 +225,7 @@ const Teachers = () => {
                     </div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
@@ -234,10 +233,10 @@ const Teachers = () => {
         {/* ================= NON-TEACHING STAFF ================= */}
         <div className="mt-16 bg-white rounded-xl shadow-lg p-6 md:p-8">
           <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 bg-[#F07B3D] rounded-lg">
+            {/* <div className="p-2 bg-[#800000] rounded-lg">
               <User className="h-6 w-6 text-white" />
-            </div>
-            <h2 className="text-xl md:text-2xl font-bold text-gray-500">
+            </div> */}
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#800000]">
               Non-Teaching Staff
             </h2>
           </div>

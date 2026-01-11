@@ -1,13 +1,13 @@
-import { aboutus_1, heroImage_1 } from "../../assets";
+import { aboutus_1, drmoonje } from "../../assets";
 
 export const ABOUT_VPP_DATA = {
   title: "About Vidya Prabodhini Prashala CBSE",
 
-  dividerColor: "bg-pink-400",
+  dividerColor: "bg-[#800000]",
 
   topImage: {
-    src: aboutus_1,
-    alt: "Podar Students in Laboratory",
+    src: drmoonje,
+    alt: "Dr. B.S. Moonje",
   },
 
   paragraphs: [

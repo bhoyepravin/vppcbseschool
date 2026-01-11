@@ -1,10 +1,7 @@
 export const primarySectionIntro = {
   title: "Primary Section (6 – 10 Years)",
   passage: [
-    "The Primary Section lays a strong academic foundation while nurturing creativity, curiosity, and confidence in every learner.",
-    "Our child-centered curriculum blends conceptual understanding with experiential and value-based learning, making education both joyful and meaningful.",
-    "Through interactive lessons, projects, and teamwork, students develop critical thinking, communication skills, and empathy.",
-    "We aim to shape independent, responsible, and confident learners who embrace knowledge with enthusiasm and carry strong values for life.",
+    "The Primary Section lays a strong academic foundation while nurturing creativity, curiosity, and confidence in every learner.Our child-centered curriculum blends conceptual understanding with experiential and value-based learning, making education both joyful and meaningful.Through interactive lessons, projects, and teamwork, students develop critical thinking, communication skills, and empathy.We aim to shape independent, responsible, and confident learners who embrace knowledge with enthusiasm and carry strong values for life.",
   ],
   cards: [
     {

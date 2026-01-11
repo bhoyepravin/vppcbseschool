@@ -15,7 +15,7 @@ const Footer = () => {
     {
       icon: FaFacebookF,
       label: "Facebook",
-      url: "#",
+      url: "https://www.facebook.com/share/1Exn77sKxB/",
     },
     {
       icon: FaLinkedin,
@@ -25,12 +25,12 @@ const Footer = () => {
     {
       icon: FaYoutube,
       label: "YouTube",
-      url: "#",
+      url: "https://youtube.com/@vppcbse1331?si=4L6Zl_o-O27F7vRz",
     },
     {
       icon: FaInstagram,
       label: "Instagram",
-      url: "#",
+      url: "https://www.instagram.com/vppcbse?igsh=YTlwZnVxaGpidjcx",
     },
   ];
 

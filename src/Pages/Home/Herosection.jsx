@@ -73,14 +73,43 @@ function HeroSection() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 pt-6"> #0A2342
-              <button className="px-6 py-3 bg-gradient-to-r from-[#0A2342] to-[#0A2342] text-white rounded-lg font-semibold hover:from-[#0A2342] → via-[#0A2342] transition-all duration-300 shadow-lg hover:shadow-xl">
-                Explore Academics
-              </button>
-              <button className="px-6 py-3 bg-white/10 backdrop-blur-sm text-white rounded-lg font-semibold border border-white/30 hover:bg-white/20 transition-all duration-300">
-                Virtual Tour
-              </button>
-            </div>
+            <div className="flex flex-row gap-3 pt-6 w-full">
+  <button
+    className="
+      w-1/2
+      px-3 sm:px-6
+      py-3
+      bg-gradient-to-r from-[#0A2342] to-[#0A2342]
+      text-white
+      rounded-lg
+      font-semibold
+      text-sm sm:text-base
+      transition-all duration-300
+      shadow-lg hover:shadow-xl
+    "
+  >
+    Explore Academics
+  </button>
+
+  <button
+    className="
+      w-1/2
+      px-3 sm:px-6
+      py-3
+      bg-[#0A2342]
+      text-white
+      rounded-lg
+      font-semibold
+      text-sm sm:text-base
+      border border-white/30
+      transition-all duration-300
+      hover:bg-[#122f57]
+    "
+  >
+    Virtual Tour
+  </button>
+</div>
+
           </motion.div>
 
           {/* Right Column - Image */}
@@ -92,7 +121,7 @@ function HeroSection() {
         <>
           <button
             onClick={prevImage}
-            className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-[#7c3aed] to-[#6d28d9] flex items-center justify-center text-white border border-white/20 hover:from-[#6d28d9] hover:to-[#5b21b6] transition-all duration-300 cursor-pointer z-20 hidden md:flex shadow-lg hover:scale-110"
+            className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-[#0A2342] to-[#0A2342] flex items-center justify-center text-white border border-white/20 hover:from-[#0A2342] hover:to-[#0A2342] transition-all duration-300 cursor-pointer z-20 hidden md:flex shadow-lg hover:scale-110"
             aria-label="Previous slide"
           >
             <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -100,7 +129,7 @@ function HeroSection() {
 
           <button
             onClick={nextImage}
-            className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-[#7c3aed] to-[#6d28d9] flex items-center justify-center text-white border border-white/20 hover:from-[#6d28d9] hover:to-[#5b21b6] transition-all duration-300 cursor-pointer z-20 hidden md:flex shadow-lg hover:scale-110"
+            className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-[#0A2342] to-[#0A2342] flex items-center justify-center text-white border border-white/20 hover:from-[#0A2342] hover:to-[#0A2342] transition-all duration-300 cursor-pointer z-20 hidden md:flex shadow-lg hover:scale-110"
             aria-label="Next slide"
           >
             <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />

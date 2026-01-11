@@ -1,11 +1,7 @@
 export const middleSectionIntro = {
   title: "Middle Section (11 – 13 Years)",
   passage: [
-    "The Middle Section serves as a bridge between foundational learning and higher academics, guiding students through a vital stage of intellectual and personal growth.",
-    "Our curriculum blends conceptual understanding with analytical thinking, creativity, and real-world application.",
-    "Through projects, research, and collaborative learning, students develop confidence, curiosity, and clarity in thought and expression.",
-    "We emphasize values, discipline, and leadership, ensuring holistic development and readiness for future challenges.",
-    "Our goal is to shape independent, responsible, and value-driven learners who think critically and act with integrity.",
+    "The Middle Section serves as a bridge between foundational learning and higher academics, guiding students through a vital stage of intellectual and personal growth.Our curriculum blends conceptual understanding with analytical thinking, creativity, and real-world application.Through projects, research, and collaborative learning, students develop confidence, curiosity, and clarity in thought and expression.We emphasize values, discipline, and leadership, ensuring holistic development and readiness for future challenges.Our goal is to shape independent, responsible, and value-driven learners who think critically and act with integrity.",
   ],
   cards: [
     {

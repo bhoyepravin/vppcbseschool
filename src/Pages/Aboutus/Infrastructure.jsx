@@ -237,19 +237,19 @@ const InfrastructurePage = () => {
           Home
         </button>
         <span>/</span>
-        <span className="font-medium text-gray-500">Infrastructure</span>
+        <span className="font-medium text-[#800000]">Infrastructure</span>
       </div>
 
       {/* Page Header */}
       <div className="mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800">
+        <h1 className=" text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
           Infrastructure
         </h1>
-        <div className="w-20 h-1.5 bg-orange-500 mt-3 mb-4 rounded-full"></div>
-        <p className="text-gray-600 text-lg max-w-3xl">
+        <div className="w-20 h-1 bg-[#800000] mt-3 mb-4 rounded-full"></div>
+        {/* <p className="text-gray-600 text-lg max-w-3xl">
           Explore our state-of-the-art campus facilities designed for holistic
           learning and development.
-        </p>
+        </p> */}
       </div>
 
       {/* 🔹 Section Selection Buttons */}
@@ -257,24 +257,36 @@ const InfrastructurePage = () => {
         <h2 className="text-xl font-semibold text-gray-700 mb-4">
           Explore Sections
         </h2>
-        <div className="flex flex-wrap gap-3">
-          {data.sections.map((section, index) => (
-            <button
-              key={section.id}
-              onClick={() => setSelectedSection(section)}
-              className={`px-5 py-3 rounded-lg font-medium transition-all duration-300 transform hover:-translate-y-1 ${
-                selectedSection.id === section.id
-                  ? "bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg scale-105"
-                  : "bg-white text-gray-700 border border-gray-200 hover:border-orange-300 hover:bg-orange-50"
-              }`}
-            >
-              <div className="flex items-center gap-2">
-                <span className="text-lg">{section.icon || "🏢"}</span>
-                <span>{section.title}</span>
-              </div>
-            </button>
-          ))}
+        <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:justify-start">
+  {data.sections.map((section) => (
+    <button
+      key={section.id}
+      onClick={() => setSelectedSection(section)}
+      className={`
+        w-full sm:w-auto
+        px-4 sm:px-5
+        py-3
+        rounded-lg
+        font-medium
+        transition-all duration-300
+        sm:hover:-translate-y-1
+        ${
+          selectedSection.id === section.id
+            ? "bg-gradient-to-r from-[#0A2342] to-[#0A2342] text-white shadow-lg sm:scale-105"
+            : "bg-gradient-to-r from-[#0A2342] to-[#0A2342] text-white"
+        }
+      `}
+    >
+      <div className="flex items-center justify-center sm:justify-start gap-2">
+        {/* <span className="text-lg">{section.icon || ""}</span> */}
+        <span className="text-sm sm:text-base whitespace-nowrap">
+          {section.title}
+        </span>
+      </div>
+    </button>
+  ))}
         </div>
+        
       </div>
 
       {/* 🔹 Selected Section Details */}

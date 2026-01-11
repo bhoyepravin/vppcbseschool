@@ -72,7 +72,6 @@ function App() {
         <Route path="admissions/guidelines" element={<AdmissionGuidelines />} />
         <Route path="admissions/procedure" element={<AdmissionProcess />} />
         <Route path="admissions/enquiry" element={<AdmissionEnquiryForm />} />
-        <Route path="admissions/fee-structure" element={<FeeStructure />} />
         <Route path="admissions/admission" element={<AdmissionForm />} />
 
         <Route path="academics/pre-primary" element={<Preprimary />} />

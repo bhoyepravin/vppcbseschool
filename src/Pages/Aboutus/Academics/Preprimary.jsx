@@ -10,7 +10,8 @@ function Preprimary() {
       <OurCurriculum />
       <ProgramsSection />
       <InquiryForm />
-      <VertualTour />
+      {/* <VertualTour /> */}
+
     </div>
   );
 }

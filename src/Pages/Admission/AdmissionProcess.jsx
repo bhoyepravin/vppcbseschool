@@ -109,24 +109,24 @@ const AdmissionProcess = () => {
         <div className="max-w-7xl mx-auto">
           {/* ================= HEADER ================= */}
           <div className="text-center mb-10">
-            <h1 className="text-2xl md:text-4xl font-bold text-gray-500 mb-4">
+            <h1 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
               {admissionProcessData.title}
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#F07B3D] to-[#FF9933] mx-auto rounded-full mb-4"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#800000] to-[#800000] mx-auto rounded-full mb-4"></div>
             <p className="text-xl text-gray-600 mb-2">
               {admissionProcessData.subtitle}
             </p>
             <p className="text-gray-700 max-w-3xl mx-auto mt-6 mb-2">
               {admissionProcessData.description}
             </p>
-            <p className="text-[#F07B3D] font-semibold text-lg">
+            <p className="text-[#800000] font-semibold text-lg">
               {admissionProcessData.welcomeMessage}
             </p>
           </div>
 
           {/* ================= HORIZONTAL PROCEDURE ================= */}
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 py-8 px-4 mb-12">
-            <h3 className="text-xl font-bold text-gray-800 text-center mb-8">
+            <h3 className="text-xl font-bold text-[#800000] text-center mb-8">
               Admission Procedure
             </h3>
 
@@ -177,10 +177,10 @@ const AdmissionProcess = () => {
           {/* ================= MINIMUM AGE CRITERIA ================= */}
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-12">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">
+              <h3 className="text-xl font-bold text-[#800000] text-center mb-8">
                 {admissionProcessData.ageCriteria.title}
               </h3>
-              <div className="flex items-center justify-center gap-4">
+              {/* <div className="flex items-center justify-center gap-4">
                 <div className="flex items-center gap-2 bg-green-50 text-green-700 px-4 py-1 rounded-full">
                   <CheckCircle className="w-4 h-4" />
                   <span className="font-semibold">
@@ -194,7 +194,7 @@ const AdmissionProcess = () => {
                     {admissionProcessData.ageCriteria.academicYear}
                   </span>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -203,10 +203,10 @@ const AdmissionProcess = () => {
                   key={item.id}
                   className="border border-gray-200 rounded-xl p-4 text-center bg-gradient-to-b from-white to-gray-50 hover:from-orange-50 hover:to-orange-100 transition-all duration-300 hover:shadow-md group"
                 >
-                  <h4 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-[#F07B3D]">
+                  <h4 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-[#800000]">
                     {item.className}
                   </h4>
-                  <div className="text-3xl font-bold text-[#F07B3D] mb-2">
+                  <div className="md:text-3xl text-sm  font-bold text-[#800000] mb-2">
                     {item.age}
                   </div>
                   <p className="text-xs text-gray-500">{item.asOfDate}</p>

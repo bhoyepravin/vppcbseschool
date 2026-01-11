@@ -19,10 +19,10 @@ const ManagementCommittee = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
-          <h1 className="text-2xl md:text-4xl font-bold text-gray-500 mb-4">
+          <h1 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
             {committeeData.hero.title}
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6 rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#800000] to-[#800000] mx-auto mb-6 rounded-full"></div>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             {committeeData.hero.description}
           </p>
@@ -38,22 +38,11 @@ const ManagementCommittee = () => {
               {/* Section Header */}
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-8">
                 <div>
-                  <h2 className="md:text-2xl  font-bold text-gray-500 mb-2">
+                  <h2 className="md:text-2xl  font-bold text-[#800000] mb-2">
                     {section.title}
                   </h2>
-                  <p className="text-gray-600">{section.description}</p>
+                  {/* <p className="text-gray-600">{section.description}</p> */}
                 </div>
-
-                {/* Download Button */}
-                <button
-                  onClick={() =>
-                    handleDownload(section.downloadFile, `${section.title}.pdf`)
-                  }
-                  className="mt-4 md:mt-0 inline-flex items-center gap-2 bg-[#F07B3D] text-white px-5 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300"
-                >
-                  <Download className="h-5 w-5" />
-                  {section.downloadText}
-                </button>
               </div>
 
               {/* Members List */}

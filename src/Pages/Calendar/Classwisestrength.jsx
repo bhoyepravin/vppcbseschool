@@ -1,12 +1,65 @@
-import React, { useState } from "react";
-import { Download, Users, ChevronRight } from "lucide-react";
+import React, { useState, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { 
+  Download, 
+  Users, 
+  X, 
+  ZoomIn, 
+  ChevronLeft, 
+  ChevronRight as RightIcon 
+} from "lucide-react";
 import { classStrengthData } from "../../constant/Calendar/classStrengthData";
 
 const Classwisestrength = () => {
   const [selectedYear, setSelectedYear] = useState("2025-26");
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [zoomLevel, setZoomLevel] = useState(1);
+  const [imagePosition, setImagePosition] = useState({ x: 0, y: 0 });
+  
+  // Refs for zoom and drag functionality
+  const imageContainerRef = useRef(null);
+  const imageRef = useRef(null);
 
-  const handleDownload = (pdfPath) => {
-    window.open(pdfPath, "_blank");
+  const handleImageClick = (imagePath, index) => {
+    setSelectedImage(imagePath);
+    setCurrentImageIndex(index);
+    setZoomLevel(1);
+    setImagePosition({ x: 0, y: 0 });
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage(null);
+    setZoomLevel(1);
+    setImagePosition({ x: 0, y: 0 });
+  };
+
+  const nextImage = () => {
+    const selectedData = classStrengthData.find(item => item.year === selectedYear);
+    if (selectedData?.images && currentImageIndex < selectedData.images.length - 1) {
+      const newIndex = currentImageIndex + 1;
+      setCurrentImageIndex(newIndex);
+      setSelectedImage(selectedData.images[newIndex]);
+      setZoomLevel(1);
+      setImagePosition({ x: 0, y: 0 });
+    }
+  };
+
+  const prevImage = () => {
+    if (currentImageIndex > 0) {
+      const selectedData = classStrengthData.find(item => item.year === selectedYear);
+      const newIndex = currentImageIndex - 1;
+      setCurrentImageIndex(newIndex);
+      setSelectedImage(selectedData.images[newIndex]);
+      setZoomLevel(1);
+      setImagePosition({ x: 0, y: 0 });
+    }
+  };
+
+  const handleWheelZoom = (e) => {
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? -0.1 : 0.1;
+    setZoomLevel(prev => Math.max(0.5, Math.min(3, prev + delta)));
   };
 
   const selectedStrength = classStrengthData.find(
@@ -14,151 +67,98 @@ const Classwisestrength = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 p-4 md:p-8">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="p-3 bg-gradient-to-r  rounded-full ">
-              <Users className="w-8 h-8 text-orange-600" />
-            </div>
-            <h1 className="text-3xl font-bold text-gray-500">
+    <section className="py-20 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-500/10 to-blue-500/10 rounded-full -translate-x-48 -translate-y-48"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-blue-500/10 to-purple-500/10 rounded-full translate-x-48 translate-y-48"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Header Section */}
+        <motion.div
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="inline-flex items-center gap-3 mb-4">
+            <div className="w-2 h-2 rounded-full bg-purple-500"></div>
+            <h2 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
               Class Wise Strength
-            </h1>
+            </h2>
+            <div className="w-2 h-2 rounded-full bg-blue-500"></div>
           </div>
-          <p className="text-gray-600">
-            View and download student strength details by academic year
+
+          <motion.div
+            className="h-1.5 w-24 bg-gradient-to-r from-[#800000] via-[#800000] to-[#800000] mx-auto mb-8 rounded-full"
+            initial={{ width: 0 }}
+            whileInView={{ width: "6rem" }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+          />
+          <p className="text-gray-700 max-w-2xl mx-auto text-lg md:text-xl">
+            View and explore student strength details by academic year
           </p>
-        </div>
+        </motion.div>
 
-        {/* Year Selection */}
-        <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
-          <h2 className="text-xl font-semibold text-gray-700 mb-4">
-            Select Academic Year
-          </h2>
-          <div className="flex flex-wrap gap-3">
-            {classStrengthData.map((item) => (
-              <button
-                key={item.year}
-                onClick={() => setSelectedYear(item.year)}
-                className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
-                  selectedYear === item.year
-                    ? "bg-gradient-to-r from-orange-500 to-orange-500 text-white shadow-md transform scale-105"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-sm"
-                }`}
-              >
-                {item.year}
-              </button>
-            ))}
-          </div>
-        </div>
+        {/* Images */}
+       {/* Images */}
+{selectedStrength?.images?.length ? (
+  <div className="grid grid-cols-1 place-items-center gap-6">
+    {selectedStrength.images.map((img, index) => (
+      <motion.div
+        key={index}
+        whileHover={{ scale: 1.03 }}
+        onClick={() => setSelectedImage(img)}
+        className="cursor-pointer bg-white shadow-md rounded-xl p-4 w-full max-w-4xl"
+      >
+        <img
+          src={img}
+          alt="Strength Chart"
+          className="w-full h-60 md:h-80 object-contain mx-auto"
+        />
+      </motion.div>
+    ))}
+  </div>
+) : (
+  <p className="text-center text-gray-500">
+    No data available for {selectedYear}
+  </p>
+)}
+</div>
 
-        {/* Current Selection Display */}
-        <div className="bg-white rounded-xl shadow-lg p-8 text-center">
-          <h3 className="text-2xl font-bold text-gray-800 mb-2">
-            {selectedStrength?.title}
-          </h3>
-          <p className="text-gray-600 mb-4">{selectedStrength?.description}</p>
-
-          {/* Statistics */}
-          <div className="flex justify-center gap-6 my-6">
-            <div className="text-center">
-              {/* <div className="text-3xl font-bold text-orange-600">
-                {selectedStrength?.totalStudents.toLocaleString()}+
-              </div> */}
-              <div className="text-sm text-gray-500">Total Students</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-orange-600">
-                {selectedStrength?.classes}
-              </div>
-              <div className="text-sm text-gray-500">Classes</div>
-            </div>
-          </div>
-
-          <button
-            onClick={() => handleDownload(selectedStrength?.pdf)}
-            className="inline-flex items-center gap-3 px-8 py-4 inline-flex items-center gap-3 px-8 py-4 bg-orange-600 text-white text-lg font-semibold rounded-lg hover:bg-orange-700 transition-colors shadow-lg hover:shadow-xl"
+      {/* IMAGE MODAL */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+            onClick={() => setSelectedImage(null)}
           >
-            <Download className="w-6 h-6" />
-            Download {selectedYear} Strength Report (PDF)
-          </button>
+            {/* Close Button */}
+            <button
+              className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 p-2 rounded-full"
+              onClick={() => setSelectedImage(null)}
+            >
+              <X className="text-white" />
+            </button>
 
-          <div className="mt-6 pt-6 border-t border-gray-200">
-            <h4 className="font-medium text-gray-700 mb-2">
-              Report Information
-            </h4>
-            <p className="text-sm text-gray-500">
-              Contains detailed class-wise student distribution, section
-              details, and strength statistics
-            </p>
-          </div>
-        </div>
-
-        {/* All Available Downloads */}
-        <div className="mt-8 bg-white rounded-xl shadow-lg p-6">
-          <div className="flex items-center gap-3 mb-4">
-            <Users className="w-6 h-6 text-blue-500" />
-            <h3 className="text-xl font-semibold text-gray-700">
-              All Available Strength Reports
-            </h3>
-          </div>
-
-          <div className="space-y-4">
-            {classStrengthData.map((item) => (
-              <div
-                key={item.year}
-                className="flex items-center justify-between p-5 border border-gray-200 rounded-xl hover:bg-blue-50 hover:border-blue-200 transition-all duration-200 group cursor-pointer"
-                onClick={() => setSelectedYear(item.year)}
-              >
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors">
-                    <Users className="w-5 h-5 text-blue-600" />
-                  </div>
-                  <div className="text-left">
-                    <h4 className="font-semibold text-gray-800 group-hover:text-blue-700">
-                      {item.title}
-                    </h4>
-                    <p className="text-sm text-gray-500">
-                      Total Students: {item.totalStudents.toLocaleString()} |
-                      Classes: {item.classes}
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="text-sm font-medium text-gray-600">
-                    Download
-                  </span>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      handleDownload(item.pdf);
-                    }}
-                    className="p-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition-colors"
-                  >
-                    <Download className="w-5 h-5" />
-                  </button>
-                  <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-blue-500" />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Footer */}
-        <div className="mt-8 text-center text-gray-500 text-sm">
-          <p>Vidya Prabodhini Prashala CBSE • Student Strength Records</p>
-          <p className="mt-1 text-xs">
-            Last updated:{" "}
-            {new Date().toLocaleDateString("en-IN", {
-              day: "numeric",
-              month: "long",
-              year: "numeric",
-            })}
-          </p>
-        </div>
-      </div>
-    </div>
+            {/* Image */}
+            <motion.img
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.9 }}
+              src={selectedImage}
+              alt="Full View"
+              className="max-w-[95vw] max-h-[90vh] object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </section>
   );
 };
 

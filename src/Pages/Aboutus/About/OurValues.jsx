@@ -52,15 +52,15 @@ const OurValues = () => {
     <section className="bg-white py-24">
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Title */}
-        <h2 className="text-center text-3xl md:text-4xl font-serif font-semibold text-gray-600 mb-10">
+        <h2 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
           Our Values
         </h2>
 
         {/* Values Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-20 text-center">
+        <div className="grid grid-cols-3 md:grid-cols-3 gap-6 md:pt-6 pt-4  text-center">
           {values.map((item, index) => (
             <div key={index}>
-              <h3 className="text-3xl md:text-4xl font-light tracking-wide leading-tight bg-gradient-to-r from-orange-300 via-orange-600 to-orange-800 bg-clip-text text-transparent whitespace-pre-line">
+              <h3 className="text-xs md:text-4xl font-light tracking-wide leading-tight bg-gradient-to-r from-[#a00000] via-[#800000] to-[#5c0000] bg-clip-text text-transparent whitespace-pre-line">
                 {item.title}
               </h3>
             </div>
