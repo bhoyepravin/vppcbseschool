@@ -242,8 +242,61 @@ import rakhi4 from "../assets/galleryimg/Pre-secondary/rakhi_4.jpeg"
 import rakhi5 from "../assets/galleryimg/Pre-secondary/rakhi_5.jpeg"
 import rakhi6 from "../assets/galleryimg/Pre-secondary/rakhi_6.jpeg"
 import rakhi7 from "../assets/galleryimg/Pre-secondary/rakhi_7.jpeg"
+import ganeshamake1 from "../assets/galleryimg/Pre-secondary/ganeshmakingact_1.jpg"
+import ganeshamake2 from "../assets/galleryimg/Pre-secondary/ganeshmakingact_2.jpg"
+import ganeshamake3 from "../assets/galleryimg/Pre-secondary/ganeshmakingact_3.jpg"
+import ganeshamake4 from "../assets/galleryimg/Pre-secondary/ganeshmakingact_4.jpg"
+import ganeshamake5 from "../assets/galleryimg/Pre-secondary/ganeshmakingact_5.jpg"
+import ganeshamake6 from "../assets/galleryimg/Pre-secondary/ganeshmakingact_6.jpg"
+import ganeshamake7 from "../assets/galleryimg/Pre-secondary/ganeshmakingact_7.jpg"
+import ganeshamake8 from "../assets/galleryimg/Pre-secondary/ganeshmakingact_8.jpg"
+import ganeshamake9 from "../assets/galleryimg/Pre-secondary/ganeshmakingact_9.jpg"
+import ganeshamake10 from "../assets/galleryimg/Pre-secondary/ganeshmakingact_10.jpg"
 
 
-export{awards1,awards2, awards3, awards4, rakhi1, rakhi2, rakhi3, rakhi4, rakhi5,rakhi6,rakhi7}
+export{awards1,awards2, awards3, awards4, rakhi1, rakhi2, rakhi3, rakhi4, rakhi5,rakhi6,rakhi7, ganeshamake1, ganeshamake2, ganeshamake3, ganeshamake4, ganeshamake5, ganeshamake6, ganeshamake7, ganeshamake8, ganeshamake10}
 
+
+import assembly1 from "../assets/galleryimg/assembly/assembly_1.jpeg"
+import assembly2 from "../assets/galleryimg/assembly/assembly_2.jpeg"
+import assembly3 from "../assets/galleryimg/assembly/assembly_3.jpeg"
+import assembly4 from "../assets/galleryimg/assembly/assembly_4.jpeg"
+import assembly5 from "../assets/galleryimg/assembly/assembly_5.jpeg"
+
+export{assembly1,  assembly2, assembly3, assembly4, assembly5}
+
+import teaching1 from "../assets/galleryimg/class_teaching_1.jpeg"
+import teaching2 from "../assets/galleryimg/class_teaching_2.jpeg"
+
+export {teaching1, teaching2 }
+
+import InvestitureCere1 from "../assets/galleryimg/Pre-secondary/investiture_ceremony_1.jpeg"
+import InvestitureCere2 from "../assets/galleryimg/Pre-secondary/investiture_ceremony_2.jpeg"
+import InvestitureCere3 from "../assets/galleryimg/Pre-secondary/investiture_ceremony_3.jpeg"
+import InvestitureCere4 from "../assets/galleryimg/Pre-secondary/investiture_ceremony_4.jpeg"
+import InvestitureCere5 from "../assets/galleryimg/Pre-secondary/investiture_ceremony_5.jpeg"
+
+export {InvestitureCere1,InvestitureCere2, InvestitureCere3, InvestitureCere4, InvestitureCere5}
+
+import ashadhiekadshi1 from "../assets/galleryimg/Pre-secondary/Ashadhi_ekadashi_1.jpeg"
+import ashadhiekadshi2 from "../assets/galleryimg/Pre-secondary/Ashadhi_ekadashi_2.jpeg"
+import ganpati1 from "../assets/galleryimg/Pre-secondary/ganpati_1.jpeg"
+import ganpati2 from "../assets/galleryimg/Pre-secondary/ganpati_2.jpeg"
+import gurupornima1 from "../assets/galleryimg/Pre-secondary/gurupornima_1.jpeg"
+import gurupornima2 from "../assets/galleryimg/Pre-secondary/gurupornima_2.jpeg"
+import gurupornima3 from "../assets/galleryimg/Pre-secondary/gurupornima_3.jpeg"
+import gurupornima4 from "../assets/galleryimg/Pre-secondary/gurupornima_4.jpeg"
+import krishnajanmashtami1 from "../assets/galleryimg/Pre-secondary/krishnajanmashtami_1.jpeg"
+import krishnajanmashtami2 from "../assets/galleryimg/Pre-secondary/krishnajanmashtami_2.jpeg"
+import navratrid1 from "../assets/galleryimg/Pre-secondary/navratri_dance_1.jpeg"
+import navratrid2 from "../assets/galleryimg/Pre-secondary/navratri_dance_2.jpeg"
+import navratrid3 from "../assets/galleryimg/Pre-secondary/navratri_dance_3.jpeg"
+import yogaday1 from "../assets/galleryimg/Pre-secondary/yogaday_1.jpeg"
+import yogaday2 from "../assets/galleryimg/Pre-secondary/yogaday_2.jpeg"
+import yogaday3 from "../assets/galleryimg/Pre-secondary/yogaday_3.jpeg"
+import independancday1 from "../assets/galleryimg/Pre-secondary/independanceday_1.jpeg"
+import independancday2 from "../assets/galleryimg/Pre-secondary/independanceday_2.jpeg"
+
+
+export {ashadhiekadshi1, ashadhiekadshi2, ganpati1, ganpati2, gurupornima1, gurupornima2, gurupornima3, gurupornima4, krishnajanmashtami1, krishnajanmashtami2, navratrid1, navratrid2, navratrid3, yogaday1, yogaday2, yogaday3, independancday1, independancday2}
 

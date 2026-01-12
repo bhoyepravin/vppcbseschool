@@ -48,56 +48,32 @@ const AdmissionEnquiryForm = () => {
 
   // TRAI-approved Indian mobile number prefixes
   const traiValidPrefixes = [
-    "70",
-    "71",
-    "72",
-    "73",
-    "74",
-    "75",
-    "76",
-    "77",
-    "78",
-    "79", // New numbering series
-    "80",
-    "81",
-    "82",
-    "83",
-    "84",
-    "85",
-    "86",
-    "87",
-    "88",
-    "89", // Existing series
-    "90",
-    "91",
-    "92",
-    "93",
-    "94",
-    "95",
-    "96",
-    "97",
-    "98",
-    "99", // Existing series
-    "60",
-    "61",
-    "62",
-    "63",
-    "64",
-    "65",
-    "66",
-    "67",
-    "68",
-    "69", // Existing series
-    "50",
-    "51",
-    "52",
-    "53",
-    "54",
-    "55",
-    "56",
-    "57",
-    "58",
-    "59", // M2M/IoT (but can be used)
+    "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", // New numbering series
+    "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", // Existing series
+    "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", // Existing series
+    "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", // Existing series
+    "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", // M2M/IoT (but can be used)
+  ];
+
+  // Last Examination passed/appeared options
+  const lastExamOptions = [
+    "SELECT LAST EXAM",
+    "Nursery",
+    "Junior KG",
+    "Senior KG",
+    "I",
+    "II",
+    "III",
+    "IV",
+    "V",
+    "VI",
+    "VII",
+    "VIII",
+    "IX",
+    "X",
+    "XI",
+    "XII",
+    "Other",
   ];
 
   const handleChange = (e) => {
@@ -159,18 +135,44 @@ const AdmissionEnquiryForm = () => {
     return null;
   };
 
+  // Updated validation function to allow digits in names
   const validateForm = () => {
     const newErrors = {};
 
-    if (!formData.fullName.trim()) newErrors.fullName = "Full Name is required";
-    if (!formData.dateOfBirth)
+    // Full Name validation - now allows digits
+    if (!formData.fullName.trim()) {
+      newErrors.fullName = "Full Name is required";
+    } else if (formData.fullName.trim().length < 2) {
+      newErrors.fullName = "Full Name must be at least 2 characters";
+    }
+
+    // Date of Birth validation
+    if (!formData.dateOfBirth) {
       newErrors.dateOfBirth = "Date of Birth is required";
-    if (!formData.admissionClass || formData.admissionClass === "SELECT CLASS")
+    } else {
+      const dob = new Date(formData.dateOfBirth);
+      const today = new Date();
+      if (dob >= today) {
+        newErrors.dateOfBirth = "Date of Birth must be in the past";
+      }
+    }
+
+    // Admission Class validation
+    if (!formData.admissionClass || formData.admissionClass === "SELECT CLASS") {
       newErrors.admissionClass = "Please select a class";
-    if (!formData.lastExam.trim())
-      newErrors.lastExam = "Last Examination passed/appeared is required";
-    if (!formData.fatherName.trim())
+    }
+
+    // Last Exam validation - now a dropdown
+    if (!formData.lastExam || formData.lastExam === "SELECT LAST EXAM") {
+      newErrors.lastExam = "Please select last examination passed/appeared";
+    }
+
+    // Father's Name validation - now allows digits
+    if (!formData.fatherName.trim()) {
       newErrors.fatherName = "Father's Name is required";
+    } else if (formData.fatherName.trim().length < 2) {
+      newErrors.fatherName = "Father's Name must be at least 2 characters";
+    }
 
     // Email validation
     if (!formData.email.trim()) {
@@ -250,6 +252,7 @@ const AdmissionEnquiryForm = () => {
       icon: Icon,
       required = true,
       rows,
+      options,
     } = fieldConfig;
 
     const error = errors[name];
@@ -275,7 +278,7 @@ const AdmissionEnquiryForm = () => {
                 Icon ? "pl-12" : "pl-4"
               } ${error ? "border-red-500" : "border-gray-300"}`}
             >
-              {classOptions.map((option, index) => (
+              {options.map((option, index) => (
                 <option key={index} value={option} disabled={index === 0}>
                   {option}
                 </option>
@@ -354,7 +357,7 @@ const AdmissionEnquiryForm = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
-            Admission Enquiry Form
+            Enquiry Form
           </h1>
           <div className="w-20 h-1 bg-gradient-to-r from-[#800000] to-[#800000] mx-auto rounded-full mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -397,7 +400,7 @@ const AdmissionEnquiryForm = () => {
                   {renderFormField({
                     label: "Full Name",
                     name: "fullName",
-                    placeholder: "Enter Full name",
+                    placeholder: "Enter Full name (digits allowed)",
                     icon: User,
                   })}
 
@@ -412,13 +415,15 @@ const AdmissionEnquiryForm = () => {
                     label: "Admission in Class",
                     name: "admissionClass",
                     type: "select",
+                    options: classOptions,
                     icon: School,
                   })}
 
                   {renderFormField({
                     label: "Last Examination passed/appeared",
                     name: "lastExam",
-                    placeholder: "Enter Last Examination passed/appeared",
+                    type: "select",
+                    options: lastExamOptions,
                     icon: BookOpen,
                   })}
                 </div>
@@ -426,9 +431,9 @@ const AdmissionEnquiryForm = () => {
                 {/* Right Column */}
                 <div>
                   {renderFormField({
-                    label: "Full name of the Father",
+                    label: "Full Name of father ",
                     name: "fatherName",
-                    placeholder: "Enter Father Name",
+                    placeholder: "Full Name of father",
                     icon: UserCircle,
                   })}
 
@@ -488,8 +493,8 @@ const AdmissionEnquiryForm = () => {
                 <p className="text-center text-gray-500 text-sm mt-4">
                   By submitting this form, you agree to our{" "}
                   <a
-                    href="/privacy-policy"
-                    className="text-[#F07B3D] hover:underline"
+                    href="/"
+                    className="text-[#800000] hover:underline"
                   >
                     Privacy Policy
                   </a>
