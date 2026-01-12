@@ -254,7 +254,7 @@ import ganeshamake9 from "../assets/galleryimg/presecondary/ganeshmakingact_9.jp
 import ganeshamake10 from "../assets/galleryimg/presecondary/ganeshmakingact_10.jpg"
 
 
-export{awards1,awards2, awards3, awards4, rakhi1, rakhi2, rakhi3, rakhi4, rakhi5,rakhi6,rakhi7, ganeshamake1, ganeshamake2, ganeshamake3, ganeshamake4, ganeshamake5, ganeshamake6, ganeshamake7, ganeshamake8, ganeshamake10}
+export{awards1,awards2, awards3, awards4, rakhi1, rakhi2, rakhi3, rakhi4, rakhi5,rakhi6,rakhi7, ganeshamake1, ganeshamake2, ganeshamake3, ganeshamake4, ganeshamake5, ganeshamake6, ganeshamake7, ganeshamake8,ganeshamake9, ganeshamake10}
 
 
 import assembly1 from "../assets/galleryimg/assembly/assembly_1.jpeg"
