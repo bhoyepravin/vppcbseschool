@@ -89,7 +89,7 @@ function VppStudentJourney() {
           {/* Desktop Left Arrow */}
           <motion.button
             onClick={scrollLeft}
-            className="hidden lg:flex absolute -left-16 top-1/2 -translate-y-1/2 w-14 h-14 rounded-2xl bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-2xl items-center justify-center hover:from-purple-700 hover:to-blue-700 transition-all duration-300 hover:scale-110 z-20 backdrop-blur-sm border border-white/20"
+            className="hidden lg:flex absolute -left-16 top-1/2 -translate-y-1/2 w-14 h-14 rounded-2xl bg-gradient-to-r from-[#0A2343] to-[#0A2343] text-white shadow-2xl items-center justify-center hover:from-[#0A2343] hover:to-[#0A2343] transition-all duration-300 hover:scale-110 z-20 backdrop-blur-sm border border-white/20"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -169,7 +169,7 @@ function VppStudentJourney() {
           {/* Desktop Right Arrow */}
           <motion.button
             onClick={scrollRight}
-            className="hidden lg:flex absolute -right-16 top-1/2 -translate-y-1/2 w-14 h-14 rounded-2xl bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-2xl items-center justify-center hover:from-purple-700 hover:to-blue-700 transition-all duration-300 hover:scale-110 z-20 backdrop-blur-sm border border-white/20"
+            className="hidden lg:flex absolute -right-16 top-1/2 -translate-y-1/2 w-14 h-14 rounded-2xl bg-gradient-to-r from-[#0A2343] to-[#0A2343] text-white shadow-2xl items-center justify-center hover:from-[#0A2343] hover:to-[#0A2343] transition-all duration-300 hover:scale-110 z-20 backdrop-blur-sm border border-white/20"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -186,7 +186,7 @@ function VppStudentJourney() {
           viewport={{ once: true }}
         >
           <button
-            className="group px-10 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 shadow-2xl hover:shadow-3xl hover:-translate-y-1 transform flex items-center gap-3"
+            className="group px-10 py-4 bg-gradient-to-r from-[#0A2343] to-[#0A2343] text-white rounded-xl font-semibold hover:from-[#0A2343] hover:to-[#0A2343] transition-all duration-300 shadow-2xl hover:shadow-3xl hover:-translate-y-1 transform flex items-center gap-3"
             onClick={() => navigate("/gallery/images")}
           >
             <span>{vppStudentJourneyData.buttonText}</span>

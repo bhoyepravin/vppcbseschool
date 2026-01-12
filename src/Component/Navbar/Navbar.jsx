@@ -210,7 +210,7 @@ const Navbar = () => {
           </div>
 
           <button
-            className="md:hidden bg-gradient-to-r from-[#7c3aed] to-[#6d28d9] hover:from-[#6d28d9] hover:to-[#5b21b6] text-white p-2.5 rounded-lg shadow-md transition-all duration-300"
+            className="md:hidden bg-gradient-to-r from-[#0A2343] to-[#0A2343] hover:from-[#0A2343] hover:to-[#0A2343] text-white p-2.5 rounded-lg shadow-md transition-all duration-300"
             onClick={() => setMobileOpen(true)}
             aria-label="Open mobile menu"
           >
@@ -231,7 +231,7 @@ const Navbar = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 {item.dropdown ? (
-                  <div className="flex items-center gap-1.5 cursor-pointer hover:text-[#a78bfa] transition-all duration-300 group/nav">
+                  <div className="flex items-center gap-1.5 cursor-pointer  transition-all duration-300 group/nav">
                     {item.label}
                     <ChevronDown
                       size={12}
@@ -241,7 +241,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={item.path}
-                    className="flex items-center gap-1.5  hover:text-[#a78bfa] no-underline text-white transition-all duration-300"
+                    className="flex items-center gap-1.5   no-underline text-white transition-all duration-300"
                   >
                     {item.label}
                   </Link>
@@ -253,7 +253,7 @@ const Navbar = () => {
                       <div key={i} className="relative group/sub">
                         {sub.dropdown ? (
                           <>
-                            <div className="flex justify-between items-center text-[#c4b5fd] px-5 py-3.5 text-sm hover:bg-[#3a2a5a]/50 cursor-pointer transition-all duration-300 border-b border-[#3a2a5a]/50">
+                            <div className="flex justify-between items-center text-[#c4b5fd] px-5 py-3.5 text-sm hover:bg-[#243c54]/50 cursor-pointer transition-all duration-300 border-b border-[#3a2a5a]/50">
                               <span>{sub.label}</span>
                               <ChevronDown
                                 size={14}

@@ -199,7 +199,7 @@ function OurAchievements() {
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <button className="group px-10 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-xl font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 shadow-2xl hover:shadow-3xl hover:-translate-y-1 transform flex items-center gap-3">
+            <button className="group px-10 py-4 bg-gradient-to-r from-[#0A2343] to-[#0A2343] text-white rounded-xl font-semibold hover:from-[#0A2343] hover:to-#0A2343 transition-all duration-300 shadow-2xl hover:shadow-3xl hover:-translate-y-1 transform flex items-center gap-3">
               <span>View All Achievements</span>
               <ChevronRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
             </button>

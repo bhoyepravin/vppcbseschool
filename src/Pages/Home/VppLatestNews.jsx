@@ -195,7 +195,7 @@ function VppLatestNews() {
           viewport={{ once: true }}
         >
           <a
-            href="/news"
+            href="/"
             className="group px-10 py-4 bg-gradient-to-r from-[#0a2342] to-[#0a2342] text-white rounded-xl font-semibold hover:from-[#0a2342] hover:to-[#0a2342] transition-all duration-300 shadow-2xl hover:shadow-3xl hover:-translate-y-1 transform flex items-center gap-3"
           >
             <span>View All News & Updates</span>

@@ -203,3 +203,47 @@ import preprimaryrangoli7 from "../assets/galleryimg/Kgsection/preprimary_rangol
 
 export { preprimaryrangoli1, preprimaryrangoli2, preprimaryrangoli3, preprimaryrangoli4, preprimaryrangoli5, preprimaryrangoli6, preprimaryrangoli7}
 
+// Students Activity
+
+import studentsactivity1 from "../assets/galleryimg/Kgsection/student_academics_activity_1.jpeg"
+import studentsactivity2 from "../assets/galleryimg/Kgsection/student_academics_activity_2.jpeg"
+import studentsactivity3 from "../assets/galleryimg/Kgsection/student_academics_activity_3.jpeg"
+import studentsactivity4 from "../assets/galleryimg/Kgsection/student_academics_activity_4.jpeg"
+import studentsactivity5 from "../assets/galleryimg/Kgsection/student_academics_activity_5.jpeg"
+import studentsactivity6 from "../assets/galleryimg/Kgsection/student_academics_activity_6.jpeg"
+
+export {studentsactivity1, studentsactivity2, studentsactivity3, studentsactivity4, studentsactivity5, studentsactivity6}
+
+// cultural 
+import cultural1 from "../assets/galleryimg/Kgsection/cultural_ashadhi_1.jpeg"
+import cultural2 from "../assets/galleryimg/Kgsection/cultural_ashadhi_2.jpeg"
+import cultural3 from "../assets/galleryimg/Kgsection/cultural_ashadhi_3.jpeg"
+import cultural4 from "../assets/galleryimg/Kgsection/cultural_ashadhi_4.jpeg"
+import shreekrishnajanmashtami1 from "../assets/galleryimg/Kgsection/shreekrishnajanmashtami_1.jpeg"
+import shreekrishnajanmashtami2 from "../assets/galleryimg/Kgsection/shreekrishnajanmashtami_2.jpeg"
+import shreekrishnajanmashtami3 from "../assets/galleryimg/Kgsection/shreekrishnajanmashtami_3.jpeg"
+import parentorientation1 from "../assets/galleryimg/Kgsection/parents_orientation_1.jpeg"
+import parentorientation2 from "../assets/galleryimg/Kgsection/parents_orientation_2.jpeg"
+
+
+export {cultural1, cultural2, cultural3,cultural4, shreekrishnajanmashtami1,shreekrishnajanmashtami2,shreekrishnajanmashtami3, parentorientation1, parentorientation2}
+
+
+//  Pre-Primary and secondary
+
+import awards1 from "../assets/galleryimg/Pre-secondary/awards_1.jpeg"
+import awards2 from "../assets/galleryimg/Pre-secondary/awards_2.jpeg"
+import awards3 from "../assets/galleryimg/Pre-secondary/awards_3.jpeg"
+import awards4 from "../assets/galleryimg/Pre-secondary/awards_4.jpeg"
+import rakhi1 from "../assets/galleryimg/Pre-secondary/rakhi_1.jpeg"
+import rakhi2 from "../assets/galleryimg/Pre-secondary/rakhi_2.jpeg"
+import rakhi3 from "../assets/galleryimg/Pre-secondary/rakhi_3.jpeg"
+import rakhi4 from "../assets/galleryimg/Pre-secondary/rakhi_4.jpeg"
+import rakhi5 from "../assets/galleryimg/Pre-secondary/rakhi_5.jpeg"
+import rakhi6 from "../assets/galleryimg/Pre-secondary/rakhi_6.jpeg"
+import rakhi7 from "../assets/galleryimg/Pre-secondary/rakhi_7.jpeg"
+
+
+export{awards1,awards2, awards3, awards4, rakhi1, rakhi2, rakhi3, rakhi4, rakhi5,rakhi6,rakhi7}
+
+

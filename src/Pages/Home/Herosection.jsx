@@ -54,11 +54,11 @@ function HeroSection() {
           >
             {/* School name with decorative element */}
             <div className="mb-8">
-              <div className="w-20 h-1 bg-gradient-to-r from-[#7c3aed] to-[#6d28d9] mb-4"></div>
+              {/* <div className="w-20 h-1 bg-gradient-to-r from-[#7c3aed] to-[#6d28d9] mb-4"></div> */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
                 Vidya Prabodhini Prashala - CBSE
               </h1>
-              <div className="w-16 h-1 bg-gradient-to-r from-[#6d28d9] to-[#7c3aed] mt-4 ml-auto lg:ml-0"></div>
+              {/* <div className="w-16 h-1 bg-gradient-to-r from-[#6d28d9] to-[#7c3aed] mt-4 ml-auto lg:ml-0"></div> */}
             </div>
 
             <p className="text-white text-sm sm:text-base md:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
@@ -66,7 +66,7 @@ function HeroSection() {
             </p>
 
             <div className="pt-4">
-              <p className="text-white/90 text-xs sm:text-sm md:text-base max-w-2xl mx-auto lg:mx-0 italic border-l-4 border-[#7c3aed] pl-4">
+              <p className="text-white/90 text-xs sm:text-sm md:text-base max-w-2xl mx-auto lg:mx-0 italic border-l-4 border-[#0A2343] pl-4">
                 Established in 1937, shaping future leaders through disciplined
                 education and holistic development.
               </p>
