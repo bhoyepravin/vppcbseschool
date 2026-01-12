@@ -15,12 +15,12 @@ const Cbseaffiliation = () => {
       {/* ================= HEADING ================= */}
       <div className="text-center mb-10">
         <div className="flex justify-center items-center gap-2">
-          <School className="w-8 h-8 text-orange-500" />
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-600">
+          {/* <School className="w-8 h-8 text-orange-500" /> */}
+          <h1 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
             CBSE Affiliation Certificates
           </h1>
         </div>
-        <div className="w-24 h-1 bg-orange-500 mx-auto mt-4"></div>
+        <div className="w-24 h-1 bg-[#800000] mx-auto mt-4"></div>
         <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
           Official CBSE affiliation certificates and mandatory documents
           required for maintaining our affiliation with the Central Board of
@@ -186,7 +186,7 @@ const Cbseaffiliation = () => {
                   href={certificate.pdfFile}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors duration-200"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#0A2343] text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors duration-200"
                 >
                   <Download className="w-4 h-4" />
                   Download

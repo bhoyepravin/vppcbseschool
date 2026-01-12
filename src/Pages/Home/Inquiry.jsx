@@ -282,7 +282,7 @@ const Inquiry = () => {
           <div className="inline-flex items-center gap-3 mb-4">
             <div className="w-2 h-2 rounded-full bg-purple-500"></div>
             <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#800000] via-[#800000] to-[#800000] bg-clip-text text-transparent">
-              Admission Enquiry Form
+              Enquiry Form
             </h2>
             <div className="w-2 h-2 rounded-full bg-blue-500"></div>
           </div>

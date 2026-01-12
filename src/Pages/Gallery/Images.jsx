@@ -29,8 +29,8 @@ const Images = () => {
       </div>
 
       {/* Page Header */}
-      <h1 className="text-4xl font-bold text-gray-500">Gallery</h1>
-      <div className="w-20 h-1 bg-orange-600 mt-3 mb-6"></div>
+      <h1 className="text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">Gallery</h1>
+      <div className="w-20 h-1 bg-[#800000] mt-3 mb-6"></div>
       <p className="max-w-2xl text-gray-600 mb-8">
         Explore photos from our school events, activities, and celebrations.
       </p>
@@ -46,7 +46,7 @@ const Images = () => {
             }}
             className={`px-5 py-2 rounded-full font-medium transition ${
               selectedCategory.id === category.id
-                ? "bg-orange-400 text-white shadow"
+                ? "bg-[#0A2342] text-white shadow"
                 : "bg-gray-200 text-gray-700 hover:bg-gray-300"
             }`}
           >
@@ -64,7 +64,7 @@ const Images = () => {
               onClick={() => setSelectedSubCategory(subcategory)}
               className={`px-4 py-2 rounded-md text-sm font-medium transition ${
                 selectedSubCategory?.id === subcategory.id
-                  ? "bg-orange-400 text-white"
+                  ? "bg-[#0A2342] text-white"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >

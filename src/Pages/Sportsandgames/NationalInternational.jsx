@@ -35,31 +35,31 @@ const NationalInternational = () => {
           ← Home
         </button>
         <span>/</span>
-        <button
+        {/* <button
           onClick={() => navigate("/gallery")}
           className="text-gray-600 hover:underline font-medium"
         >
           Gallery
-        </button>
-        <span>/</span>
+        </button> */}
+        {/* <span>/</span> */}
         <span className="font-medium text-gray-500">National</span>
       </div>
 
       {/* Page Header */}
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-gray-500">National Gallery</h1>
-        <div className="w-20 h-1 bg-green-600 mt-3 mb-4"></div>
+        <h1 className="text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">National Gallery</h1>
+        <div className="w-20 h-1 bg-[#800000] mt-3 mb-4"></div>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <p className="max-w-2xl text-gray-600">
             Showcasing our school's participation and achievements in
             national-level events, competitions, and programs across India.
           </p>
           <div className="flex items-center gap-4">
-            <div className="px-4 py-2 bg-green-50 text-green-700 rounded-lg font-medium">
+            <div className="px-4 py-2 bg-green-50 text-gray-700 rounded-lg font-medium">
               <span className="font-bold">{totalPhotos}</span> Photos
             </div>
             <div className="flex items-center gap-2">
-              <Flag className="w-5 h-5 text-green-600" />
+              <Flag className="w-5 h-5 text-gray-600" />
               <span className="text-sm text-gray-600">
                 {data.categories.length} Categories
               </span>
@@ -75,7 +75,7 @@ const NationalInternational = () => {
             onClick={() => setViewMode("grid")}
             className={`p-2 rounded-lg ${
               viewMode === "grid"
-                ? "bg-orange-100 text-orange-600"
+                ? "bg-orange-100 text-[#0A2343]"
                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"
             }`}
           >
@@ -87,7 +87,7 @@ const NationalInternational = () => {
             onClick={() => setViewMode("list")}
             className={`p-2 rounded-lg ${
               viewMode === "list"
-                ? "bg-orange-100 text-orange-600"
+                ? "bg-orange-100 text-[#0A2343]"
                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"
             }`}
           >
@@ -117,7 +117,7 @@ const NationalInternational = () => {
               }}
               className={`px-5 py-2 rounded-full font-medium transition ${
                 selectedCategory.id === category.id
-                  ? "bg-orange-400 text-white shadow"
+                  ? "bg-[#0A2343] text-white shadow"
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"
               }`}
             >
@@ -158,7 +158,7 @@ const NationalInternational = () => {
               onClick={() => setSelectedSubCategory(subcategory)}
               className={`px-4 py-2 rounded-md text-sm font-medium transition ${
                 selectedSubCategory?.id === subcategory.id
-                  ? "bg-orange-400 text-white"
+                  ? "bg-[#0A2343] text-white"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >

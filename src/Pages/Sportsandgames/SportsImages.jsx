@@ -35,27 +35,27 @@ const SportsImages = () => {
           ← Home
         </button>
         <span>/</span>
-        <button
+        {/* <button
           onClick={() => navigate("/gallery")}
           className="text-gray-600 hover:underline font-medium"
         >
           Gallery
         </button>
-        <span>/</span>
+        <span>/</span> */}
         <span className="font-medium text-gray-500">Sports</span>
       </div>
 
       {/* Page Header - Using orange divider from your code */}
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-gray-500">Sports Gallery</h1>
-        <div className="w-20 h-1 bg-orange-600 mt-3 mb-4"></div>
+        <h1 className=" text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">Sports Gallery</h1>
+        <div className="w-20 h-1 bg-[#800000] mt-3 mb-4"></div>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <p className="max-w-2xl text-gray-600">
             Action shots, team photos, and memorable moments from our school's
             sports events, tournaments, and athletic achievements.
           </p>
           <div className="flex items-center gap-4">
-            <div className="px-4 py-2 bg-orange-50 text-orange-700 rounded-lg font-medium">
+            <div className="px-4 py-2 bg-orange-50 text-[#0A2342] rounded-lg font-medium">
               <span className="font-bold">{totalPhotos}</span> Sports Photos
             </div>
             <div className="flex items-center gap-2">
@@ -75,7 +75,7 @@ const SportsImages = () => {
             onClick={() => setViewMode("grid")}
             className={`p-2 rounded-lg ${
               viewMode === "grid"
-                ? "bg-orange-100 text-orange-600"
+                ? "bg-orange-100 text-[#0A2342]"
                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"
             }`}
           >
@@ -117,7 +117,7 @@ const SportsImages = () => {
               }}
               className={`px-5 py-2 rounded-full font-medium transition ${
                 selectedCategory.id === category.id
-                  ? "bg-orange-400 text-white shadow"
+                  ? "bg-[#0A2342] text-white shadow"
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"
               }`}
             >
@@ -158,7 +158,7 @@ const SportsImages = () => {
               onClick={() => setSelectedSubCategory(subcategory)}
               className={`px-4 py-2 rounded-md text-sm font-medium transition ${
                 selectedSubCategory?.id === subcategory.id
-                  ? "bg-orange-400 text-white"
+                  ? "bg-[#0A2342] text-white"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >

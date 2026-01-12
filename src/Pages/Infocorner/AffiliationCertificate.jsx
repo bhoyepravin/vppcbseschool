@@ -8,8 +8,8 @@ const AffiliationCertificate = () => {
       {/* ================= HEADING ================= */}
       <div className="text-center mb-10">
         <div className="flex justify-center items-center gap-2">
-          <FileText className="w-8 h-8 text-orange-400" />
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-600">
+          {/* <FileText className="w-8 h-8 text-orange-400" /> */}
+          <h1 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
             Affiliation Certificates
           </h1>
         </div>
@@ -72,7 +72,7 @@ const AffiliationCertificate = () => {
                 href={item.file}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors duration-200"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-[#012343] text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors duration-200"
               >
                 <Download className="w-4 h-4" />
                 Download PDF

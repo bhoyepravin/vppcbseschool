@@ -1,4 +1,4 @@
-import { holisticeducation, innovationlab } from "../../assets";
+import { digitalliteracy, holisticeducation, innovationlab, personalized, personalizesupport } from "../../assets";
 
 export const vppStudentJourneyData = {
   title: "A Glimpse into a Student's Journey at Probodhini School",
@@ -15,7 +15,7 @@ export const vppStudentJourneyData = {
     {
       id: 2,
       image:
-        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+        digitalliteracy,
       title: "Digital Literacy & Coding",
       description:
         "Students begin coding early with interactive blocks, progressing to programming, robotics, AI, and app development. Probodhini School equips students with the digital skills needed for the future.",
@@ -30,7 +30,7 @@ export const vppStudentJourneyData = {
     {
       id: 4,
       image:
-        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80",
+        personalizesupport,
       title: "Personalized Support & Remedial Learning",
       description:
         "Every student receives personalized guidance to strengthen their foundational knowledge. Probodhini School ensures that all learners gain confidence and achieve academic excellence through dedicated support.",

@@ -193,7 +193,7 @@ const Navbar = () => {
                 onClick={() => navigate("/admissions/enquiry")}
                 className=" w-full bg-gradient-to-r from-[#0A2342] to-[#0A2342] hover:from-[#0A2342] hover:to-[#0A2342] text-white text-xs px-4 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 font-semibold tracking-wide"
               >
-                INQUIRY FORM
+                Enquiry Form
               </button>
 
               <Link to="/disclosure" className="no-underline">

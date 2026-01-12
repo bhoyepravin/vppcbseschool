@@ -18,10 +18,10 @@ const Videos = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
       {/* ================= HEADING ================= */}
       <div className="text-center mb-10">
-        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-600">
+        <h1 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
           {videoData.title}
         </h1>
-        <div className="w-24 h-1 bg-orange-500 mx-auto mt-4"></div>
+        <div className="w-24 h-1 bg-[#800000] mx-auto mt-4"></div>
         <p className="max-w-2xl mx-auto mt-4 text-gray-600 text-sm sm:text-base">
           {videoData.description}
         </p>

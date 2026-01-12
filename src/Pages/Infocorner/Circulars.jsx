@@ -32,12 +32,12 @@ const Circulars = () => {
       {/* ================= HEADING ================= */}
       <div className="text-center mb-10">
         <div className="flex justify-center items-center gap-2">
-          <Bell className="w-8 h-8 text-orange-500" />
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-600">
+          {/* <Bell className="w-8 h-8 text-orange-500" /> */}
+          <h1 className="text-center text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">
             Circulars & Notices
           </h1>
         </div>
-        <div className="w-24 h-1 bg-orange-500 mx-auto mt-4"></div>
+        <div className="w-24 h-1 bg-[#0A2343] mx-auto mt-4"></div>
         <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
           Official circulars, notices, and announcements from CBSE and our
           institution. Stay updated with the latest information.
@@ -46,7 +46,7 @@ const Circulars = () => {
 
       {/* ================= CBSE PORTAL SECTION ================= */}
       <div
-        className="mb-12 p-6 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl shadow-lg cursor-pointer transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl"
+        className="mb-12 p-6 bg-gradient-to-r from-[#0A2343] to-[#0A2343] rounded-xl shadow-lg cursor-pointer transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl"
         onClick={handleCbsePortalClick}
       >
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -197,7 +197,7 @@ const Circulars = () => {
                       href={circular.pdfFile}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors duration-200"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-[#0A2343] text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors duration-200"
                       onClick={() =>
                         handleCircularDownload(circular.pdfFile, circular.title)
                       }

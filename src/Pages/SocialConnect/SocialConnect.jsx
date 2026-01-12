@@ -70,27 +70,27 @@ const SocialConnect = () => {
           ← Home
         </button>
         <span>/</span>
-        <button
+        {/* <button
           onClick={() => navigate("/gallery")}
           className="text-gray-600 hover:underline font-medium"
         >
           Gallery
-        </button>
-        <span>/</span>
+        </button> */}
+        {/* <span>/</span> */}
         <span className="font-medium text-gray-500">Social QR Codes</span>
       </div>
 
       {/* Page Header */}
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-gray-500">Social QR Codes</h1>
-        <div className="w-20 h-1 bg-purple-600 mt-3 mb-4"></div>
+        <h1 className="text-2xl text-[#800000] md:text-4xl font-serif font-semibold text- mb-4">Social QR Codes</h1>
+        <div className="w-20 h-1 bg-[#800000] mt-3 mb-4"></div>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <p className="max-w-2xl text-gray-600">
             Scan these QR codes to quickly connect with us on various platforms
             and access our digital services.
           </p>
           <div className="flex items-center gap-4">
-            <div className="px-4 py-2 bg-purple-50 text-purple-700 rounded-lg font-medium flex items-center gap-2">
+            {/* <div className="px-4 py-2 bg-purple-50 text-purple-700 rounded-lg font-medium flex items-center gap-2">
               <QrCode className="w-5 h-5" />
               <span className="font-bold">
                 {data.categories.reduce(
@@ -99,7 +99,7 @@ const SocialConnect = () => {
                 )}
               </span>{" "}
               QR Codes
-            </div>
+            </div> */}
             <div className="flex items-center gap-2">
               <Smartphone className="w-5 h-5 text-purple-500" />
               <span className="text-sm text-gray-600">
@@ -149,7 +149,7 @@ const SocialConnect = () => {
       </div> */}
 
       {/* Category Selection */}
-      <div className="mb-10">
+      {/* <div className="mb-10">
         <h2 className="text-lg font-semibold text-gray-700 mb-4">
           Select Category
         </h2>
@@ -172,7 +172,7 @@ const SocialConnect = () => {
             </button>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Selected Category Details */}
       <div className="mb-6">
@@ -190,7 +190,9 @@ const SocialConnect = () => {
             className="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100"
           >
             {/* Platform Header */}
-            <div className={`p-4 ${getColorClass(platform.color, "bg")}`}>
+           <div className="p-2 bg-[#0A2342]">
+
+
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">{platform.icon}</span>
@@ -221,7 +223,7 @@ const SocialConnect = () => {
               </p>
 
               {/* Action Buttons */}
-              <div className="flex items-center justify-center gap-2 w-full">
+              {/* <div className="flex items-center justify-center gap-2 w-full">
                 <button
                   onClick={() => downloadQRCode(platform, platform.qrCode)}
                   className="flex-1 flex items-center justify-center gap-2 px-3 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition text-sm font-medium"
@@ -256,7 +258,7 @@ const SocialConnect = () => {
                     </>
                   )}
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}
@@ -342,7 +344,7 @@ const SocialConnect = () => {
 const getColorClass = (color, type = "bg") => {
   const colorMap = {
     green: {
-      bg: "bg-green-600",
+      bg: "bg-[#0A2342]",
       text: "text-green-600",
       light: "bg-green-50",
     },
@@ -372,7 +374,7 @@ const getColorClass = (color, type = "bg") => {
       light: "bg-orange-50",
     },
     teal: {
-      bg: "bg-teal-600",
+      bg: "bg-[#0A2342]",
       text: "text-teal-600",
       light: "bg-teal-50",
     },

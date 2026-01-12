@@ -14,7 +14,7 @@ const socialQrData = {
           //icon: "💬",
           qrCode:
             "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/911234567890&color=25D366&bgcolor=ffffff",
-          color: "green",
+          color: "#0A2342",
           description: "Scan to join WhatsApp updates channel",
         },
         {

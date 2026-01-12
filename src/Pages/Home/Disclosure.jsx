@@ -166,7 +166,7 @@ const Disclosure = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm"
+              className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm pt-70"
               onClick={closeDocumentViewer}
             >
               {/* Close Button */}
@@ -240,7 +240,7 @@ const Disclosure = () => {
               </div>
 
               {/* PDF Viewer Container */}
-              <div className="w-full h-full flex items-center justify-center p-4">
+              <div className="w-full h-full  flex items-center justify-center p-4">
                 <div className="relative w-full max-w-5xl h-[85vh] bg-white rounded-xl overflow-hidden">
                   {/* PDF Embed */}
                   <div 

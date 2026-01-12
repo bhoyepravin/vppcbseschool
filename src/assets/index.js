@@ -24,6 +24,8 @@ import leaders from "../assets/home/leaders.jpeg";
 import academic from "../assets/home/academic_excellence.jpeg";
 import holisticeducation from "../assets/home/holistic_learning.jpeg";
 import innovationlab from "../assets/home/Innovation_Labs.jpg";
+import personalizesupport from "../assets/home/personalize_support.jpg"
+import digitalliteracy from "../assets/home/digital_literacy.jpg"
 export {
   digitallearnig,
   sciencelab,
@@ -35,6 +37,8 @@ export {
   academic,
   holisticeducation,
   innovationlab,
+  personalizesupport,
+  digitalliteracy
 };
 
 // Visual Tour Section
