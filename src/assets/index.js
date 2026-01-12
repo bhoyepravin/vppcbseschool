@@ -176,3 +176,30 @@ import instaqr from "../assets/sociallinks/insta_qr_vpp.png";
 import facebookqr from "../assets/sociallinks/facebook_qr_vpp.png";
 import youtubeqr from "../assets/sociallinks/youtube_qr_vpp.jpg";
 export { instaqr, facebookqr, youtubeqr };
+
+
+// Gallery
+import preprimarydiwali1 from "../assets/galleryimg/Kgsection/pre_primary_diwali_1.jpeg"
+import preprimarydiwali2 from "../assets/galleryimg/Kgsection/pre_primary_diwali_2.jpeg"
+import preprimarydiwali3 from "../assets/galleryimg/Kgsection/pre_primary_diwali_3.jpeg"
+import preprimarydiwali4 from "../assets/galleryimg/Kgsection/pre_primary_diwali_4.jpeg"
+import preprimarydiwali5 from "../assets/galleryimg/Kgsection/pre_primary_diwali_5.jpeg"
+import preprimarydiwali6 from "../assets/galleryimg/Kgsection/pre_primary_diwali_6.jpeg"
+import preprimarydiwali7 from "../assets/galleryimg/Kgsection/pre_primary_diwali_7.jpeg"
+import preprimarydiwali8 from "../assets/galleryimg/Kgsection/pre_primary_diwali_8.jpeg"
+import preprimarydiwali9 from "../assets/galleryimg/Kgsection/pre_primary_diwali_9.jpeg"
+
+export {preprimarydiwali1,preprimarydiwali2, preprimarydiwali3, preprimarydiwali4, preprimarydiwali5,preprimarydiwali6, preprimarydiwali7,preprimarydiwali8,preprimarydiwali9}
+
+// Pre Primary Rangoli Comp
+
+import preprimaryrangoli1 from "../assets/galleryimg/Kgsection/preprimary_rangoli_comp_1.jpeg"
+import preprimaryrangoli2 from "../assets/galleryimg/Kgsection/preprimary_rangoli_comp_2.jpeg"
+import preprimaryrangoli3 from "../assets/galleryimg/Kgsection/preprimary_rangoli_comp_3.jpeg"
+import preprimaryrangoli4 from "../assets/galleryimg/Kgsection/preprimary_rangoli_comp_4.jpeg"
+import preprimaryrangoli5 from "../assets/galleryimg/Kgsection/preprimary_rangoli_comp_5.jpeg"
+import preprimaryrangoli6 from "../assets/galleryimg/Kgsection/preprimary_rangoli_comp_6.jpeg"
+import preprimaryrangoli7 from "../assets/galleryimg/Kgsection/preprimary_rangoli_comp_7.jpeg"
+
+export { preprimaryrangoli1, preprimaryrangoli2, preprimaryrangoli3, preprimaryrangoli4, preprimaryrangoli5, preprimaryrangoli6, preprimaryrangoli7}
+

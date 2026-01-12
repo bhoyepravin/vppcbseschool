@@ -49,6 +49,7 @@ import Reports from "./Pages/Infocorner/Reports";
 import AffiliationCertificate from "./Pages/Infocorner/AffiliationCertificate";
 import Circulars from "./Pages/Infocorner/Circulars";
 import VppsStudentJourneydetails from "./Pages/Home/VppsStudentJourneydetails";
+import JobRegistration from "./Pages/Jobvacancy/JobRegistration";
 
 function App() {
   const router = createBrowserRouter(
@@ -119,6 +120,8 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="social-connect" element={<SocialConnect />} />
+        <Route path="vacancy" element={<JobRegistration />} />
+
       </Route>
     )
   );

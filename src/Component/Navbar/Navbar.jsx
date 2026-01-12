@@ -201,6 +201,11 @@ const Navbar = () => {
                   MANDATORY PUBLIC DISCLOSURE
                 </button>
               </Link>
+               <Link to="/vacancy" className="no-underline">
+                <button className="bg-gradient-to-r from-[#0A2342] to-[#0A2342] hover:from-[#0A2342] hover:to-[#0A2342] text-white text-xs px-4 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full font-semibold tracking-wide">
+                  CAREER
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -215,7 +220,7 @@ const Navbar = () => {
       </div>
 
       {/* ================= DESKTOP NAV ================= */}
-      <div className="bg-gradient-to-r from-[#0a2342] via-[#0a2342] to-[#0a2342] hidden md:block sticky top-33 z-40 shadow-xl border-b border-[#3a2a5a]">
+      <div className="bg-gradient-to-r from-[#0a2342] via-[#0a2342] to-[#0a2342] hidden md:block sticky top-38 z-40 shadow-xl border-b border-[#3a2a5a]">
         <div className="container mx-auto px-4">
           <ul className="flex gap-6 py-3.5 text-white text-sm font-semibold">
             {navItems.map((item, index) => (

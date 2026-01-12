@@ -8,6 +8,19 @@ import {
   kgopenhouse5,
   kgopenhouse6,
   kgopenhouse7,
+  preprimarydiwali1,
+  preprimarydiwali2,
+  preprimarydiwali3,
+  preprimarydiwali4,
+  preprimarydiwali5,
+  preprimarydiwali6,
+  preprimarydiwali7,
+  preprimarydiwali8,
+  preprimarydiwali9,
+  preprimaryrangoli1,
+  preprimaryrangoli2,
+  preprimaryrangoli3,
+  preprimaryrangoli4,
 } from "../../assets";
 
 // Note: Replace Unsplash URLs with your actual image imports
@@ -100,7 +113,7 @@ const galleryData = {
               id: 1,
               title: "Pre Primary Diwali Activity Parents",
               image:
-                "https://images.unsplash.com/photo-1603398938378-e54eab446dde?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                preprimarydiwali1,
               date: "2024-11-12",
               description:
                 "Diwali celebration with parents participating in craft activities",
@@ -108,9 +121,9 @@ const galleryData = {
             },
             {
               id: 2,
-              title: "Pre Primary Parents Rangoli Competition",
+              title: "Pre Primary Diwali Activity Parents",
               image:
-                "https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                preprimarydiwali2,
               date: "2024-10-20",
               description:
                 "Rangoli competition organized for parents of pre-primary students",
@@ -118,13 +131,113 @@ const galleryData = {
             },
             {
               id: 3,
-              title: "Students Academic Activity",
+              title: "Pre Primary Diwali Activity Parents",
               image:
-                "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                preprimarydiwali3,
               date: "2024-09-10",
               description:
                 "Academic activities and learning sessions for KG students",
               alt: "KG students academic activity",
+            },
+            {
+              id: 4,
+              title: "Pre Primary Diwali Activity Parents",
+              image:
+                preprimarydiwali4,
+              date: "2024-09-10",
+              description:
+                "Academic activities and learning sessions for KG students",
+              alt: "KG students academic activity",
+            },
+            {
+              id: 5,
+              title: "Pre Primary Diwali Activity Parents",
+              image:
+                preprimarydiwali5,
+              date: "2024-09-10",
+              description:
+                "Academic activities and learning sessions for KG students",
+              alt: "KG students academic activity",
+            },
+            {
+              id: 6,
+              title: "Pre Primary Diwali Activity Parents",
+              image:
+                preprimarydiwali6,
+              date: "2024-09-10",
+              description:
+                "Academic activities and learning sessions for KG students",
+              alt: "KG students academic activity",
+            },
+            {
+              id: 7,
+              title: "Pre Primary Diwali Activity Parents",
+              image:
+                preprimarydiwali7,
+              date: "2024-09-10",
+              description:
+                "Academic activities and learning sessions for KG students",
+              alt: "KG students academic activity",
+            },
+            {
+              id: 8,
+              title: "Pre Primary Diwali Activity Parents",
+              image:
+                preprimarydiwali8,
+              date: "2024-09-10",
+              description:
+                "Academic activities and learning sessions for KG students",
+              alt: "Pre Primary Diwali Activity Parents",
+            },
+            {
+              id: 9,
+              title: "Pre Primary Diwali Activity Parents",
+              image:
+                preprimarydiwali9,
+              date: "2024-09-10",
+              description:
+                "Academic activities and learning sessions for KG students",
+              alt: "Pre Primary Diwali Activity Parents",
+            },
+            {
+              id: 10,
+              title: "Pre Primary Parents Rangoli Competition",
+              image:
+                preprimaryrangoli1,
+              date: "2024-09-10",
+              description:
+                "Academic activities and learning sessions for KG students",
+              alt: "Pre Primary Parents Rangoli Competition",
+            },
+            {
+              id: 11,
+              title: "Pre Primary Parents Rangoli Competition",
+              image:
+                preprimaryrangoli2,
+              date: "2024-09-10",
+              description:
+                "Academic activities and learning sessions for KG students",
+              alt: "Pre Primary Parents Rangoli Competition",
+            },
+            {
+              id: 12,
+              title: "Pre Primary Parents Rangoli Competition",
+              image:
+                preprimaryrangoli3,
+              date: "2024-09-10",
+              description:
+                "Academic activities and learning sessions for KG students",
+              alt: "Pre Primary Parents Rangoli Competition",
+            },
+            {
+              id: 13,
+              title: "Pre Primary Parents Rangoli Competition",
+              image:
+                preprimaryrangoli4,
+              date: "2024-09-10",
+              description:
+                "Academic activities and learning sessions for KG students",
+              alt: "Pre Primary Parents Rangoli Competition",
             },
           ],
         },
