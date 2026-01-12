@@ -45,19 +45,19 @@ const primarySecondaryGalleryData = {
         },
         {
           id: 5,
-          title: "Rakhi Making",
+          title: "Rakhi Making Activity",
           image: rakhi1,
           date: "2024-09-05",
           description: "Clay Ganesha making activity for Ganesh Chaturthi",
-          alt: "Rakhi Making ",
+          alt: "Rakhi Making Activity",
         },
         {
           id: 6,
-          title: "Rakhi Making ",
+          title: "Rakhi Making Activity ",
           image: rakhi2,
           date: "2024-09-05",
           description: "Clay Ganesha making activity for Ganesh Chaturthi",
-          alt: "Rakhi Making ",
+          alt: "Rakhi Making Activity ",
         },
         {
           id: 7,
@@ -65,7 +65,7 @@ const primarySecondaryGalleryData = {
           image: rakhi3,
           date: "2024-09-05",
           description: "Clay Ganesha making activity for Ganesh Chaturthi",
-          alt: "Rakhi Making ",
+          alt: "Rakhi Making Activity ",
         },
         {
           id: 8,
@@ -73,7 +73,7 @@ const primarySecondaryGalleryData = {
           image: rakhi4,
           date: "2024-09-05",
           description: "Clay Ganesha making activity for Ganesh Chaturthi",
-          alt: "Rakhi Making ",
+          alt: "Rakhi Making Activity ",
         },
         {
           id: 9,
@@ -81,7 +81,7 @@ const primarySecondaryGalleryData = {
           image: rakhi5,
           date: "2024-09-05",
           description: "Clay Ganesha making activity for Ganesh Chaturthi",
-          alt: "Rakhi Making ",
+          alt: "Rakhi Making Activity",
         },
         {
           id: 10,
@@ -89,7 +89,7 @@ const primarySecondaryGalleryData = {
           image: rakhi6,
           date: "2024-09-05",
           description: "Clay Ganesha making activity for Ganesh Chaturthi",
-          alt: "Rakhi Making ",
+          alt: "Rakhi Making Activity",
         },
         {
           id: 11,
@@ -97,7 +97,7 @@ const primarySecondaryGalleryData = {
           image: rakhi7,
           date: "2024-09-05",
           description: "Clay Ganesha making activity for Ganesh Chaturthi",
-          alt: "Rakhi Making ",
+          alt: "Rakhi Making Activity",
         },
       ],
     },
