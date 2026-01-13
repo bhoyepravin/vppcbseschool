@@ -8,7 +8,7 @@ import {
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
-import { logo } from "../../assets";
+import { footerlogo, logo } from "../../assets";
 
 const Footer = () => {
   const socialIcons = [
@@ -49,7 +49,7 @@ const Footer = () => {
           transition={{ delay: 0.2 }}
         >
           <img
-            src={logo}
+            src={footerlogo}
             alt="Vidya Prabodhini Prashala Logo"
             className="mb-6 w-40"
           />

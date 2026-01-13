@@ -1,6 +1,6 @@
 import logo from "../assets/Logo/logo_chmes.png";
-
-export { logo };
+import footerlogo  from "../assets/Logo/vpp_logo.jpg"
+export { logo , footerlogo }
 
 import brochurepdf from "../assets/Brochure/prospectus_2024_final.pdf";
 export { brochurepdf };
@@ -252,7 +252,6 @@ import ganeshamake7 from "../assets/galleryimg/presecondary/ganeshmakingact_7.jp
 import ganeshamake8 from "../assets/galleryimg/presecondary/ganeshmakingact_8.jpg"
 import ganeshamake9 from "../assets/galleryimg/presecondary/ganeshmakingact_9.jpg"
 import ganeshamake10 from "../assets/galleryimg/presecondary/ganeshmakingact_10.jpg"
-
 
 export{awards1,awards2, awards3, awards4, rakhi1, rakhi2, rakhi3, rakhi4, rakhi5,rakhi6,rakhi7, ganeshamake1, ganeshamake2, ganeshamake3, ganeshamake4, ganeshamake5, ganeshamake6, ganeshamake7, ganeshamake8,ganeshamake9, ganeshamake10}
 

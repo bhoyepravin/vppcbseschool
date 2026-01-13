@@ -5,7 +5,7 @@ export const quicklinksData = {
   items: [
     {
       id: 1,
-      title: "School Imformation",
+      title: "School Information",
       icon: UserPlus,
       link: "about/about",
     },

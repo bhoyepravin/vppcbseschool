@@ -598,7 +598,7 @@ const AdmissionForm = () => {
     "AB-",
     "O+",
     "O-",
-    "Other",
+    "Under Investigation",
   ];
 
   const categories = ["General", "OBC", "SC", "ST", "VJNT", "SBC", "Other"];
@@ -614,17 +614,32 @@ const AdmissionForm = () => {
   ];
 
   const motherTongues = [
-    "Marathi",
-    "Hindi",
-    "English",
-    "Gujarati",
-    "Kannada",
-    "Tamil",
-    "Telugu",
-    "Malayalam",
-    "Bengali",
-    "Other",
-  ];
+  // Scheduled Languages (22)
+  "Assamese",
+  "Bengali",
+  "Bodo",
+  "Dogri",
+   "English",
+  "Gujarati",
+  "Hindi",
+  "Kannada",
+  "Kashmiri",
+  "Konkani",
+  "Maithili",
+  "Malayalam",
+  "Manipuri (Meitei)",
+  "Marathi",
+  "Nepali",
+  "Odia",
+  "Punjabi",
+  "Sanskrit",
+  "Santali",
+  "Sindhi",
+  "Tamil",
+  "Telugu",
+  "Urdu",
+];
+
 
   const castes = [
     "General",

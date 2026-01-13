@@ -475,7 +475,7 @@ const Inquiry = () => {
                             >
                               <option value="">Select Grade</option>
                               {[
-                                "playgroup",
+                                
                                 "nursery",
                                 "lkg",
                                 "ukg",

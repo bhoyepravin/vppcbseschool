@@ -148,7 +148,7 @@ function OurAchievements() {
                       <Trophy className="w-6 h-6 text-yellow-500" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-800">
-                      Milestone
+                      {item.title}
                     </h3>
                   </div>
                   <p className="text-gray-600 text-base leading-relaxed">
@@ -211,3 +211,5 @@ function OurAchievements() {
 }
 
 export default OurAchievements;
+
+
